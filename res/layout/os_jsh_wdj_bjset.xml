@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <osprey_adphone_hn.cellcom.com.cn.widget.RoundImageView
+        android:id="@+id/video_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/os_dhb_itempic"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/videotv"
+        style="@style/app_textStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_white"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:id="@+id/bjxxrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/os_view_selector1"
+        android:minHeight="45dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/app_medium_textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/os_jsh_wdj_sbsz_bjsz_bjxx" />
+
+        <ImageView
+            android:id="@+id/bjxxsb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/os_jsh_checkboxoff"
+             />
+
+        <ProgressBar
+            android:id="@+id/progressBar_bjxx"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:indeterminateDrawable="@anim/progress_white"
+            android:indeterminateDuration="560000" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_white"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:id="@+id/xgyxrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/os_view_selector1"
+        android:minHeight="45dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/app_medium_textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/os_jsh_wdj_sbsz_bjsz_bjyx" />
+
+        <ImageView
+            android:id="@+id/yxiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/os_jsh_wdj_arrow_right_1"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/yxtv"
+            style="@style/app_medium_textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/yxiv"
+            android:layout_toStartOf="@id/yxiv"
+            android:text="@string/os_jsh_wdj_sbsz_bjsz_bjyx" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_white"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:id="@+id/ydrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/os_view_selector1"
+        android:minHeight="45dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/app_medium_textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/os_jsh_wdj_sbsz_bjsz_ydzc" />
+
+        <ImageView
+            android:id="@+id/ydsb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/os_jsh_checkboxoff"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar_yd"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:indeterminateDrawable="@anim/progress_white"
+            android:indeterminateDuration="560000" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_white"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:id="@+id/fmqrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/os_view_selector1"
+        android:minHeight="45dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/app_medium_textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/os_jsh_wdj_sbsz_bjsz_fmq" />
+
+        <ImageView
+            android:id="@+id/fmqsb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/os_jsh_checkboxoff"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar_fmq"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone" 
+            android:indeterminateDrawable="@anim/progress_white"
+            android:indeterminateDuration="560000" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_white"
+        android:contentDescription="@null" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bearLin"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/os_view_selector1"
+        android:minHeight="45dp" >
+
+        <TextView
+            android:id="@+id/rName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            style="@style/app_medium_textStyle"/>
+        <ImageView 
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" 
+            android:background="@drawable/os_jsh_wdj_arrow_right_1"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_white"
+        android:contentDescription="@null" />
+
+</LinearLayout>

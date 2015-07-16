@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/os_view_selector1"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_thumbnail"
+        android:layout_width="105dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/os_dhb_qhb_fm"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toEndOf="@id/iv_thumbnail"
+        android:layout_toRightOf="@id/iv_thumbnail"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/app_textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="绿地公馆" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/qhbtv"
+                style="@style/app_medium_textStyle1"
+                android:background="@drawable/os_dhb_syzx_qhb"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_height="26dp" />
+
+            <osprey_adphone_hn.cellcom.com.cn.widget.MarqueeText
+                android:id="@+id/tv_describe"
+                style="@style/app_medium_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="城市中的大自然" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="2015/01/20 13:37" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_gray"
+        android:contentDescription="@null" />
+
+</RelativeLayout>

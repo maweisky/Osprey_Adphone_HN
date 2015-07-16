@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@null"
+            android:background="@drawable/os_logo_icon1" />
+
+        <TextView
+            style="@style/app_big_textStyle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="鱼鹰网"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_sytk"
+            style="@style/app_medium_textStyle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="《鱼鹰应用使用条款及隐私规则》" />
+		<LinearLayout
+            android:id="@+id/ll_kfdh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:id="@+id/tv_kfdh"
+                style="@style/app_text_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服电话：0731-89875328" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_yyrx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:id="@+id/tv_yyrx"
+                style="@style/app_text_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鱼鹰热线：400-0731-611" />
+        </LinearLayout>
+		
+        <TextView
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="湖南点亮科技有限公司    版权所有" />
+    </LinearLayout>
+
+</RelativeLayout>

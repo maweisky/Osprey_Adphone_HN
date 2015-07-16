@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_list_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+	<RelativeLayout
+        android:id="@+id/querycontact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <EditText
+            android:id="@+id/querycontacet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/os_dhb_searchcontact"
+            android:completionThreshold="1"
+            android:dropDownHorizontalOffset="34.0dip"
+            android:dropDownVerticalOffset="0.0dip"
+            android:dropDownWidth="240.0dip"
+            android:gravity="start|center_vertical"
+            android:hint="@string/os_dhb_contact_search"
+            android:paddingEnd="35.0dp"
+            android:paddingRight="35.0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            style="@style/app_medium_textStyle2" />
+
+        <ImageButton
+            android:id="@+id/queryCityExit"
+            android:layout_width="18.0dip"
+            android:layout_height="18.0dip"
+            android:layout_alignLeft="@id/querycontacet"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@id/querycontacet"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginEnd="8.0dip"
+            android:layout_marginLeft="-30.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginStart="-30.0dip"
+            android:layout_toEndOf="@id/querycontacet"
+            android:layout_toRightOf="@id/querycontacet"
+            android:background="@drawable/os_dhb_searchdelete"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <osprey_adphone_hn.cellcom.com.cn.widget.SlidingLinearLayout
+        android:id="@+id/slidingview"
+        android:layout_below="@id/querycontact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#000000"
+            android:divider="@drawable/os_dhb_itembottompic"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:visibility="visible" />
+    </osprey_adphone_hn.cellcom.com.cn.widget.SlidingLinearLayout>
+
+    <osprey_adphone_hn.cellcom.com.cn.widget.QuickAlphabeticBar
+        android:id="@+id/fast_scroller"
+        android:layout_width="22dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/querycontact"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top|right|center"
+        android:layout_marginTop="0dip"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/os_dhb_background" >
+    </osprey_adphone_hn.cellcom.com.cn.widget.QuickAlphabeticBar>
+
+    <TextView
+        android:id="@+id/fast_position"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="34dip"
+        android:background="@drawable/os_dhb_sort"
+        android:gravity="center"
+        android:padding="2dip"
+        android:textColor="#404040"
+        android:textSize="48sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/light_gray1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <osprey_adphone_hn.cellcom.com.cn.widget.RoundImageView
+                android:id="@+id/video_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/os_dhb_itempic" />
+
+            <TextView
+                android:id="@+id/videotv"
+                style="@style/app_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_white"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/net_type_bar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/app_textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/os_net_type" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_net_type"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/net_type_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/radio_one"
+                        style="@style/app_textStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/os_net_wired" />
+
+                    <RadioButton
+                        android:id="@+id/radio_two"
+                        style="@style/app_textStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/os_net_wifi" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/list_wifi_bar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/app_textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/os_list_wifi" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_list_wifi"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/list_wifi_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <osprey_adphone_hn.cellcom.com.cn.widget.MyListView
+                    android:id="@+id/list_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="#00000000"
+                    android:cacheColorHint="@null"
+                    android:divider="@null" >
+                </osprey_adphone_hn.cellcom.com.cn.widget.MyListView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView>
+
+</RelativeLayout>

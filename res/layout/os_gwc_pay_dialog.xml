@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/osprey_adphone_hn.cellcom.com.cn"
+    android:id="@+id/ll_dialog_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/os_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_back1" />
+
+            <TextView
+                style="@style/app_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="支付" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_yinyuan"
+            style="@style/app_textStyle2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/os_edit_input_bg"
+            android:padding="10dp"
+            android:text="银元        0" />
+        
+        <TextView
+            android:id="@+id/tv_jifen"
+            style="@style/app_textStyle2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/os_edit_input_bg"
+            android:padding="10dp"
+            android:text="积分        0" />
+        
+        <TextView
+            android:id="@+id/tv_huafei"
+            style="@style/app_textStyle2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/os_edit_input_bg"
+            android:padding="10dp"
+            android:text="话费        0" />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/app_textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="支付金额"
+                />
+            
+            <TextView
+                android:id="@+id/tv_paynum"
+                style="@style/app_textStyle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="0积分"
+                />
+        </LinearLayout>
+
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="top"
+            >
+            <CheckBox 
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/os_checkbox_selector"
+                android:button="@null"
+                android:layout_marginTop="5dp"
+                android:id="@+id/cb_hint"
+                />
+            <TextView
+                android:id="@+id/tv_paynum"
+                style="@style/app_small_textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:text="本商城兑换商品一概不予退换，如有疑问请致电鱼鹰热线"
+                />
+        </LinearLayout>
+        
+        <osprey_adphone_hn.cellcom.com.cn.widget.fbutton.FButton 
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            style="@style/app_textStyle1"
+            android:id="@+id/btn_comfirm_pay"
+            app:shadowEnabled="false"
+            app:cornerRadius="3dp"
+            android:text="确认支付"/>
+
+        
+    </LinearLayout>
+
+</LinearLayout>

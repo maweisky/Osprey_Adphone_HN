@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="45dp"
+    android:background="@color/orange"
+    >
+
+    <LinearLayout
+        android:id="@+id/llAppBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:padding="10dp"
+        android:background="@drawable/os_topbar_set_selector"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/ivAppback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/os_topbar_back_icon" >
+        </ImageView>
+    </LinearLayout>
+	
+    <osprey_adphone_hn.cellcom.com.cn.widget.MarqueeText
+        android:id="@+id/tvTopTitle"
+        style="@style/app_titleStyle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/llAppBack"
+        android:layout_toEndOf="@id/llAppBack"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true" />
+	<LinearLayout
+        android:id="@+id/llAppShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:padding="5dp"
+        android:background="@drawable/os_topbar_set_selector"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/ivAppDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/os_topbar_share" >
+        </ImageView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/os_view_selector2"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_list_select_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/os_list_select_flag_selector" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_list_select_flag" 
+        android:padding="5dp"
+        android:layout_centerVertical="true" >
+
+        <LinearLayout
+            android:id="@+id/ll_time_and_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv_alarm_time"
+                style="@style/app_medium_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:text="2015-02-10 14:20:30" />
+
+            <osprey_adphone_hn.cellcom.com.cn.widget.MarqueeText
+                android:id="@+id/tv_alarm_device_name"
+                style="@style/app_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="alarm device name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_time_and_name"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_alarm"
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/os_jsh_wdj_item_cover" />
+
+            <TextView
+                android:id="@+id/tv_look_device"
+                style="@style/app_small_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/os_look_monitor_device_icon"
+                android:text="查看摄像头" />
+
+            <TextView
+                android:id="@+id/tv_look_device_lx"
+                style="@style/app_small_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/os_look_monitor_device_tp_icon"
+                android:text="报警图片" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

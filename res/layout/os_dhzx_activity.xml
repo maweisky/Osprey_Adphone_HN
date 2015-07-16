@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/osprey_adphone_hn.cellcom.com.cn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/app_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="积分操作：" />
+
+            <TextView
+                android:id="@+id/tv_dhgz"
+                style="@style/app_textStyle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="兑换规则>" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/tv_yy_title1"
+                    style="@style/app_textStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="银元" />
+
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_yy_title1"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/os_dhb_grzx_dhzx_yy_icon" />
+
+                    <EditText
+                        android:id="@+id/et_num1"
+                        style="@style/app_medium_textStyle"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/os_edit_input_bg"
+                        android:gravity="center"
+                        android:hint="输入兑换数量"
+                        android:numeric="integer"
+                        android:padding="5dp"
+                        android:singleLine="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_dhl1"
+                            style="@style/app_small_textStyle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:10" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/os_dhb_grzx_dhzx_dh_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_1"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/app_small_textStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拥有：" />
+
+                    <TextView
+                        android:id="@+id/tv_yongyou1"
+                        style="@style/app_small_textStyle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="0个" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0" >
+
+                <TextView
+                    android:id="@+id/tv_hf_title1"
+                    style="@style/app_textStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="话费" />
+
+                <LinearLayout
+                    android:id="@+id/ll_hf_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_hf_title1"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/os_dhb_grzx_dhzx_hf_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_yy1"
+                        style="@style/app_medium_textStyle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="0元" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_hf_title1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/app_small_textStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="余额：" />
+
+                    <TextView
+                        android:id="@+id/tv_ye1"
+                        style="@style/app_small_textStyle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="0元" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.fbutton.FButton
+            android:id="@+id/btn_dh1"
+            style="@style/app_medium_textStyle1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="确认兑换"
+            app:buttonColor="@color/light_green1"
+            app:cornerRadius="3dp"
+            app:shadowEnabled="false" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/tv_yy_title2"
+                    style="@style/app_textStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="银元" />
+
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_yy_title2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/os_dhb_grzx_dhzx_yy_icon" />
+
+                    <EditText
+                        android:id="@+id/et_num2"
+                        style="@style/app_medium_textStyle"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/os_edit_input_bg"
+                        android:gravity="center"
+                        android:hint="输入兑换数量"
+                        android:numeric="integer"
+                        android:padding="5dp"
+                        android:singleLine="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_dhl2"
+                            style="@style/app_small_textStyle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:10" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/os_dhb_grzx_dhzx_dh_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_2"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/app_small_textStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拥有：" />
+
+                    <TextView
+                        android:id="@+id/tv_yongyou2"
+                        style="@style/app_small_textStyle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="0个" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0" >
+
+                <TextView
+                    android:id="@+id/tv_jf_title2"
+                    style="@style/app_textStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="积分" />
+
+                <LinearLayout
+                    android:id="@+id/ll_jf_title2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_jf_title2"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/os_dhb_grzx_dhzx_jf_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_yy2"
+                        style="@style/app_medium_textStyle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="0分" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_jf_title2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/app_small_textStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="余额：" />
+
+                    <TextView
+                        android:id="@+id/tv_ye2"
+                        style="@style/app_small_textStyle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="0分" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.fbutton.FButton
+            android:id="@+id/btn_dh2"
+            style="@style/app_medium_textStyle1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="确认兑换"
+            app:buttonColor="@color/light_green1"
+            app:cornerRadius="3dp"
+            app:shadowEnabled="false" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/tv_jf_title3"
+                    style="@style/app_textStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="积分" />
+
+                <LinearLayout
+                    android:id="@+id/ll_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_jf_title3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/os_dhb_grzx_dhzx_jf_icon" />
+
+                    <EditText
+                        android:id="@+id/et_num3"
+                        style="@style/app_medium_textStyle"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/os_edit_input_bg"
+                        android:gravity="center"
+                        android:hint="输入兑换数量"
+                        android:numeric="integer"
+                        android:padding="5dp"
+                        android:singleLine="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_dhl3"
+                            style="@style/app_small_textStyle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:10" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/os_dhb_grzx_dhzx_dh_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_3"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/app_small_textStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拥有：" />
+
+                    <TextView
+                        android:id="@+id/tv_yongyou3"
+                        style="@style/app_small_textStyle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="0分" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0" >
+
+                <TextView
+                    android:id="@+id/tv_hf_title3"
+                    style="@style/app_textStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="话费" />
+
+                <LinearLayout
+                    android:id="@+id/ll_hf_title3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_hf_title3"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/os_dhb_grzx_dhzx_hf_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_jf3"
+                        style="@style/app_medium_textStyle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="0元" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_hf_title3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/app_small_textStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="余额：" />
+
+                    <TextView
+                        android:id="@+id/tv_ye3"
+                        style="@style/app_small_textStyle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="0元" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.fbutton.FButton
+            android:id="@+id/btn_dh3"
+            style="@style/app_medium_textStyle1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="确认兑换"
+            android:visibility="gone"
+            app:buttonColor="@color/light_green1"
+            app:cornerRadius="3dp"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+
+</osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView>

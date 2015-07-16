@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/osprey_adphone_hn.cellcom.com.cn"
+    xmlns:arc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg" >
+
+    <include
+        android:id="@+id/include_"
+        layout="@layout/app_base_top4" />
+
+    <FrameLayout
+        android:id="@+id/fl_pView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_" >
+
+        <LinearLayout
+            android:id="@+id/layout_p2p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.p2p.core.P2PView
+                android:id="@+id/pView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.p2p.core.P2PView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_number"
+            style="@style/app_small_textStyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="当前观看人数为: 6"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/sp_close_voice"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_margin="5dp"
+            android:contentDescription="@null"
+            android:drawableTop="@drawable/os_p2p_call_sound_out_icon"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/control_top"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/control_bar_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/video_mode_hd"
+                style="@style/app_small_textStyle1"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/os_view_selector1"
+                android:gravity="center"
+                android:text="@string/os_video_mode_hd" />
+
+            <TextView
+                android:id="@+id/video_mode_sd"
+                style="@style/app_small_textStyle1"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/os_view_selector1"
+                android:gravity="center"
+                android:text="@string/os_video_mode_sd" />
+
+            <TextView
+                android:id="@+id/video_mode_ld"
+                style="@style/app_small_textStyle1"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/os_view_selector1"
+                android:gravity="center"
+                android:text="@string/os_video_mode_ld" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_voice_state"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/transparent"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/voice" />
+
+            <ImageView
+                android:id="@+id/voice_state"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@anim/voice_state" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- 全拼切换 -->
+
+    <!-- <RelativeLayout
+        android:id="@+id/rl_device"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/app_left_arrow2"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/app_right_arrow2"
+            android:contentDescription="@null" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv_device"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_toLeftOf="@id/iv_right"
+            android:layout_toRightOf="@id/iv_left"
+            android:background="#90000000"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_device"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout> -->
+
+    <!-- 竖屏切换 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_sp_device"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_pView"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_sp_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:contentDescription="@null"
+            android:background="@drawable/app_left_arrow2" />
+
+        <ImageView
+            android:id="@+id/iv_sp_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:contentDescription="@null"
+            android:background="@drawable/app_right_arrow2" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv_sp_device"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_toLeftOf="@id/iv_sp_right"
+            android:layout_toRightOf="@id/iv_sp_left"
+            android:background="#90000000"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_sp_device"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sp_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_sp_device"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/sp_send_voice"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:background="@null"
+            android:drawableTop="@drawable/os_p2p_send_audio_off_icon"
+            android:gravity="center"
+            android:text="@string/os_jsh_speak" />
+
+        <TextView
+            android:id="@+id/sp_record"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:background="@null"
+            android:drawableTop="@drawable/os_phonerecord_selector"
+            android:gravity="center"
+            android:text="@string/os_jsh_pzlx"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/sp_phone"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:background="@null"
+            android:drawableTop="@drawable/os_phonefile_selector"
+            android:gravity="center"
+            android:text="@string/os_jsh_zpj" />
+
+        <TextView
+            android:id="@+id/sp_set"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:background="@null"
+            android:drawableTop="@drawable/os_set_selector"
+            android:gravity="center"
+            android:text="@string/os_jsh_set" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_push"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_sp_device"
+        android:background="@color/translucent_8"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <osprey_adphone_hn.cellcom.com.cn.widget.ArcMenu
+        android:id="@+id/photorecordarc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_sp_device"
+        android:layout_marginTop="20dp"
+        arc:position="left_top"
+        arc:radius="80dp" >
+
+        <Button
+            android:id="@+id/sp_record_arc"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:drawablePadding="5dp"
+            android:background="@null"
+            android:drawableTop="@drawable/os_phonerecord_selector"
+            android:text="@string/os_jsh_pzlx" />
+        <ImageView
+            android:id="@+id/invisibleiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/os_record_selector"
+            android:visibility="invisible"
+            android:tag="invisible" />
+        <ImageView
+            android:id="@+id/photo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/os_photo_selector"
+            android:tag="Camera" />
+
+        <ImageView
+            android:id="@+id/record_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/os_record_selector"
+            android:tag="Music" />
+        
+    </osprey_adphone_hn.cellcom.com.cn.widget.ArcMenu>
+
+    <LinearLayout
+        android:id="@+id/ll_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+		
+        <TextView
+            android:id="@+id/close_video"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/os_close_videoselector"
+            android:gravity="center" />
+        
+        <TextView
+            android:id="@+id/close_voice"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/os_p2p_call_sound_out_landicon"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/send_voice"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/os_p2p_speak_landicon"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/phototv"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/os_photo_landselector"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/record"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/os_record_landselector"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/photo"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawablePadding="5dp"
+            android:visibility="gone"
+            android:drawableTop="@drawable/os_phonefile_landselector"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/set"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawablePadding="5dp"
+            android:visibility="gone"
+            android:drawableTop="@drawable/os_set_landselector"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/lshfbtn"
+            style="@style/app_big_textStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/app_login_btnbg"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:text="@string/os_jsh_wdj_lshf" />
+    </LinearLayout>
+
+
+</RelativeLayout>

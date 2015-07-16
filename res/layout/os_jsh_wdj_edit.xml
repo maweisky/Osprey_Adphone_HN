@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/app_textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/os_jsh_wdj_edit_sbid" />
+
+            <EditText
+                android:id="@+id/et_sbid"
+                style="@style/app_medium_textStyle"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/os_jsh_wdj_wifi_add_input_bg"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/app_textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/os_jsh_wdj_edit_addr_icon"
+                android:drawablePadding="5dp"
+                android:gravity="left|bottom"
+                android:text="@string/os_jsh_wdj_edit_ndzz" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/app_textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/os_jsh_wdj_edit_cs" />
+
+                    <EditText
+                        android:id="@+id/et_cs"
+                        style="@style/app_medium_textStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:cursorVisible="false"
+                        android:focusableInTouchMode="false"
+                        android:editable="false"
+                        android:clickable="true"
+                        android:background="@drawable/os_jsh_wdj_wifi_add_input_bg"
+                        android:gravity="center_vertical"
+                        android:hint="@string/os_jsh_wdj_edit_hint_3"
+                        android:inputType="text"
+                        android:padding="5dp" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/app_textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/os_jsh_wdj_edit_xq" />
+
+                    <EditText
+                        android:id="@+id/et_xq"
+                        style="@style/app_medium_textStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:cursorVisible="false"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:editable="false"
+                        android:clickable="true"
+                        android:background="@drawable/os_jsh_wdj_wifi_add_input_bg"
+                        android:gravity="center_vertical"
+                        android:hint="@string/os_jsh_wdj_edit_hint_4"
+                        android:inputType="text"
+                        android:padding="5dp" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/app_textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/os_jsh_wdj_edit_fh" />
+
+                    <EditText
+                        android:id="@+id/et_fh"
+                        style="@style/app_medium_textStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:cursorVisible="false"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="false"
+                        android:editable="false"
+                        android:clickable="true"
+                        android:background="@drawable/os_jsh_wdj_wifi_add_input_bg"
+                        android:gravity="center_vertical"
+                        android:hint="@string/os_jsh_wdj_edit_hint_5"
+                        android:inputType="text"
+                        android:padding="5dp" />
+                </LinearLayout>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_province"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_province"
+                            style="@style/app_textStyle2"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/os_spiner_bg"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:singleLine="true" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/os_spiner_down_arrow_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_city"
+                            style="@style/app_textStyle2"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/os_spiner_bg"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:singleLine="true" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/os_spiner_down_arrow_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_area"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_area"
+                            style="@style/app_textStyle2"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/os_spiner_bg"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:singleLine="true" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/os_spiner_down_arrow_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_garden"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_garden"
+                            style="@style/app_textStyle2"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/os_spiner_bg"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:singleLine="true" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/os_spiner_down_arrow_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_building"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_building"
+                            style="@style/app_textStyle2"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/os_spiner_bg"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:singleLine="true" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/os_spiner_down_arrow_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_house"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_house"
+                            style="@style/app_textStyle2"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/os_spiner_bg"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:singleLine="true" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/os_spiner_down_arrow_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/app_textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/os_jsh_wdj_edit_deivce_icon"
+                    android:drawablePadding="5dp"
+                    android:gravity="left|bottom"
+                    android:text="@string/os_jsh_wdj_edit_sxtsz" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/app_textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/os_jsh_wdj_edit_mc" />
+
+                    <EditText
+                        android:id="@+id/et_mc"
+                        style="@style/app_medium_textStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/os_jsh_wdj_wifi_add_input_bg"
+                        android:gravity="center_vertical"
+                        android:hint="@string/os_jsh_wdj_edit_hint_1"
+                        android:inputType="text"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/app_textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/os_jsh_wdj_edit_mm" />
+
+                    <EditText
+                        android:id="@+id/et_mm"
+                        style="@style/app_medium_textStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/os_jsh_wdj_wifi_add_input_bg"
+                        android:gravity="center_vertical"
+                        android:hint="@string/os_jsh_wdj_edit_hint_2"
+                        android:inputType="numberPassword"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/app_textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/os_jsh_wdj_edit_fm" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" >
+
+                        <ImageView
+                            android:id="@+id/iv_tx"
+                            android:layout_width="160dp"
+                            android:layout_height="90dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/os_jsh_wdj_wifi_add_input_bg" />
+
+                        <Button
+                            android:id="@+id/btn_add"
+                            style="@style/app_small_textStyle4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:drawablePadding="3dp"
+                            android:drawableTop="@drawable/os_jsh_wdj_item_add_selector"
+                            android:text="@string/os_jsh_wdj_edit_sxttxsz"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/app_big_textStyle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/app_login_btnbg"
+                android:minHeight="40dp"
+                android:text="@string/app_ButtonTextYes" />
+        </LinearLayout>
+    </LinearLayout>
+
+</osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView>

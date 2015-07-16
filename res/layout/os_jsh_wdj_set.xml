@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/toprl"
+            android:background="@drawable/app_base_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <osprey_adphone_hn.cellcom.com.cn.widget.RoundImageView
+                android:id="@+id/video_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/os_dhb_itempic" />
+
+            <TextView
+                android:id="@+id/videotv"
+                style="@style/app_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/video_img"
+                android:layout_toRightOf="@id/video_img" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/os_jsh_wdj_arrow_right_1"
+                android:contentDescription="@null" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_white"
+            android:contentDescription="@null" />
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.MyListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@null" />
+    </LinearLayout>
+
+</osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView>

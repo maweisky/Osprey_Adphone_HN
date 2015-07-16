@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange" >
+
+        <LinearLayout
+            android:id="@+id/llAppBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/os_topbar_set_selector"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/ivAppback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/os_topbar_back_icon" >
+            </ImageView>
+        </LinearLayout>
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.MarqueeText
+            android:id="@+id/tvTopTitle"
+            style="@style/app_titleStyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_topbar" >
+
+        <TextView
+            style="@style/app_textStyle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_launcher"
+            android:gravity="center"
+            android:text="图片加载中..." />
+
+        <ImageView
+            android:id="@+id/iv_ad"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/cybmbtn"
+                style="@style/app_big_textStyle1"
+                android:textSize="20sp"
+                android:minWidth="150dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/os_dhb_syzx_qhbyyselector"
+                android:text="参与报名" />
+
+            <TextView
+                android:id="@+id/cjsjtv"
+                style="@style/app_medium_textStyle4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_money_anim"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_topbar"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/ll_money_anim"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_add_money_num"
+            style="@style/app_big_textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/deep_red" />
+
+        <ImageView
+            android:id="@+id/iv_money_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/os_coins_box" />
+    </RelativeLayout>
+
+</RelativeLayout>

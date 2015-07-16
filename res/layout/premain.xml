@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newmainbar"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/botll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/caldroid_white"
+        android:paddingTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dhbbtn"
+            style="@style/app_textStyle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/os_main_dhbselector"
+            android:text="@string/os_main_dhb" />
+
+        <Button
+            android:id="@+id/jshbtn"
+            style="@style/app_textStyle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/os_main_jshselector"
+            android:text="@string/os_main_jsh" />
+
+        <Button
+            android:id="@+id/cshbtn"
+            style="@style/app_textStyle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/os_main_cshselector"
+            android:text="@string/os_main_csh" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_ad"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.jazzyviewpager.JazzyViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </osprey_adphone_hn.cellcom.com.cn.widget.jazzyviewpager.JazzyViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_dot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </FrameLayout>
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/botll"
+        android:layout_below="@id/fl_ad"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/advll_dot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        <osprey_adphone_hn.cellcom.com.cn.widget.jazzyviewpager.JazzyViewPager
+            android:id="@+id/advviewpager"
+            android:layout_above="@id/advll_dot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

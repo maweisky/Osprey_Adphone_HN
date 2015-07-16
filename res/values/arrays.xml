@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="flowset">
+		<item>yyw_sendverifysms</item>
+		<item>yyw_register</item>
+		<item>yyw_updatepwd</item>
+		<item>yyw_suggest</item>
+		<item>yyw_callphone</item>
+		<item>yyw_getlookmoney</item>
+		<item>yyw_getsao</item>
+		<item>yyw_getyao_new2</item>
+		<item>yyw_zyz_getwin</item>
+		<item>yyw_duihuan</item>
+		<item>yyw_shopping_add</item>
+		<item>yyw_shopping_del</item>
+		<item>yyw_shopping_del2</item>
+		<item>yyw_shopping_update</item>
+		<item>yyw_shopping_order</item>
+		<item>yyw_userinfo_update</item>
+		<item>yyw_setdevice</item>
+		<item>yyw_deldevice</item>
+		<item>yyw_sao_getwin</item>
+	</string-array>
+</resources>

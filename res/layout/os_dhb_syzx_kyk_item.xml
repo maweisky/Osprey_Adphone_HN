@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/ll_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/os_view_selector1">
+        <ImageView 
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="105dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/os_img_default_icon"
+            android:layout_margin="10dp"/>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+            <TextView 
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                style="@style/app_textStyle"
+                android:text="绿地公馆"/>
+            
+            <osprey_adphone_hn.cellcom.com.cn.widget.MarqueeText 
+                android:id="@+id/tv_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                style="@style/app_medium_textStyle2"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="城市中的大自然"/>
+            
+            <TextView 
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                style="@style/app_medium_textStyle2"
+                android:text="2015/01/20 13:37"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/light_gray"/>
+
+</LinearLayout>

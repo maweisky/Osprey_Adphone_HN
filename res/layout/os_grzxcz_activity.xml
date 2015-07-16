@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/app_base_top6" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_title1"
+                style="@style/app_textStyle4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/os_view_selector1"
+                android:gravity="center"
+                android:text="现金充值" />
+
+            <!--
+            <TextView
+                android:id="@+id/tv_title2"
+                style="@style/app_textStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/os_view_selector1"
+                android:gravity="center"
+                android:text="待发货" />
+
+            <TextView
+                android:id="@+id/tv_title3"
+                style="@style/app_textStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/os_view_selector1"
+                android:gravity="center"
+                android:text="待收货" />
+            -->
+
+            <TextView
+                android:id="@+id/tv_title4"
+                style="@style/app_textStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/os_view_selector1"
+                android:gravity="center"
+                android:text="体验卡充值" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/orange" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#000000"
+        android:flipInterval="30" />
+
+</LinearLayout>

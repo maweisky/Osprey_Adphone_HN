@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/app_small_textStyle3"
+            android:text="@string/os_jsh_wdj_djtjspsb"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/os_jsh_wdj_item_add_selector"
+            android:background="@null"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/ll_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_smewm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/app_small_textStyle3"
+                    android:drawableTop="@drawable/os_jsh_wdj_item_smewm_selector"
+                    android:drawablePadding="3dp"
+                    android:background="@null"
+                    android:text="@string/os_jsh_wdj_add_smewm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_sdtj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/app_small_textStyle3"
+                    android:drawableTop="@drawable/os_jsh_wdj_item_sdtj_selector"
+                    android:drawablePadding="3dp"
+                    android:background="@null"
+                    android:text="@string/os_jsh_wdj_add_sdtj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/app_small_textStyle3"
+                    android:drawableTop="@drawable/os_jsh_wdj_item_wifi_selector"
+                    android:drawablePadding="3dp"
+                    android:background="@null"
+                    android:text="@string/os_jsh_wdj_add_wifi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_ssjyw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/app_small_textStyle3"
+                    android:drawableTop="@drawable/os_jsh_wdj_item_ssjyw_selector"
+                    android:drawablePadding="3dp"
+                    android:background="@null"
+                    android:text="@string/os_jsh_wdj_add_ssjyw" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

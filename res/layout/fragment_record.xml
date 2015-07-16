@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/osprey_adphone_hn.cellcom.com.cn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <osprey_adphone_hn.cellcom.com.cn.widget.jazzylistview.JazzyListView
+        android:id="@+id/list_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:cacheColorHint="@android:color/transparent"
+        app:effect="helix"
+        app:max_velocity="0"
+        app:only_animate_fling="false"
+        app:only_animate_new_items="false" >
+    </osprey_adphone_hn.cellcom.com.cn.widget.jazzylistview.JazzyListView>
+</RelativeLayout>

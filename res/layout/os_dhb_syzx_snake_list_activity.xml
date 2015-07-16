@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/osprey_adphone_hn.cellcom.com.cn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/et_keyword"
+            style="@style/app_textStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/os_edit_input_bg"
+            android:gravity="center_vertical"
+            android:hint="关键字"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.fbutton.FButton
+            android:id="@+id/btn_search"
+            style="@style/app_textStyle1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/app_ButtonTextSearch"
+            app:cornerRadius="3dp"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_divider_line"
+        android:layout_below="@id/ll_search"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/light_gray" />
+
+    <TextView
+        android:id="@+id/tv_empty"
+        style="@style/app_text_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:drawablePadding="10dp"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/empty_img"
+        android:gravity="center"
+        android:text="找不到相关数据，点击图片重新加载~"
+        android:visibility="gone" />
+
+    <osprey_adphone_hn.cellcom.com.cn.widget.jazzylistview.JazzyListView
+        android:id="@+id/listview"
+        android:layout_below="@id/iv_divider_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        app:effect="helix"
+        app:only_animate_new_items="false"
+        app:only_animate_fling="false"
+        app:max_velocity="0" >
+    </osprey_adphone_hn.cellcom.com.cn.widget.jazzylistview.JazzyListView>
+
+</RelativeLayout>

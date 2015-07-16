@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+		<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:padding="5dp"
+		    style="@style/app_textStyle"
+		    android:text="@string/hsc_welcom_registerxycontent"
+		    />
+    </LinearLayout>
+</osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/os_jsh_wdj_ldss_send_bg"/>
+                
+                <ImageView 
+                    android:id="@+id/iv_ldss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/os_jsh_wdj_ldss_send_scan"/>
+                
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/os_jsh_wdj_ldss_send_phone"/>
+            </RelativeLayout>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/app_medium_textStyle3"
+                android:text="@string/os_jsh_wdj_ldss_send"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_tdl"
+            style="@style/app_big_textStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/app_login_btnbg"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:text="@string/os_jsh_wdj_ldss_tdl" />
+    </LinearLayout>
+
+</LinearLayout>

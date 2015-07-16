@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/osprey_adphone_hn.cellcom.com.cn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/toprl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:minHeight="45dp" >
+
+        <LinearLayout
+            android:id="@+id/llAppBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/os_topbar_set_selector"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/ivAppback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/os_topbar_back_icon" >
+            </ImageView>
+        </LinearLayout>
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.MarqueeText
+            android:id="@+id/tvTopTitle"
+            style="@style/app_titleStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/llAppBack"
+            android:layout_toRightOf="@id/llAppBack"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true" />
+
+        <TextView 
+            android:id="@+id/lstv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/os_topbar_set_selector"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:padding="10dp"
+            style="@style/app_big_textStyle1"
+            android:text="历史"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_below="@id/toprl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/et_keyword"
+            style="@style/app_textStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/os_edit_input_bg"
+            android:gravity="center_vertical"
+            android:hint="关键字"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.fbutton.FButton
+            android:id="@+id/btn_search"
+            style="@style/app_textStyle1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/app_ButtonTextSearch"
+            app:buttonColor="@color/orange"
+            app:cornerRadius="3dp"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_divider_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/ll_search"
+        android:background="@color/light_gray" />
+
+    <TextView
+        android:id="@+id/tv_empty"
+        style="@style/app_text_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/empty_img"
+        android:gravity="center"
+        android:text="找不到相关数据，点击图片重新加载~"
+        android:visibility="gone" />
+
+    <osprey_adphone_hn.cellcom.com.cn.widget.xlistview.XListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_divider_line"
+        android:layout_weight="1.0"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" >
+    </osprey_adphone_hn.cellcom.com.cn.widget.xlistview.XListView>
+
+</RelativeLayout>

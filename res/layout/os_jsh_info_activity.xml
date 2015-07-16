@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/osprey_adphone_hn.cellcom.com.cn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/os_ad_banner_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_aq_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_aq_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/os_jsh_aq_info_selector"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                style="@style/app_medium_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="安全信息"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wg_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_wg_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/os_jsh_wg_info_selector"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                style="@style/app_medium_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="物管信息"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_af_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_af_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/os_jsh_af_info_selector"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                style="@style/app_medium_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="安防商城"
+                android:textSize="13dp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/ll_zpj_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_zpj_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/os_jsh_zpj_info_selector"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                style="@style/app_medium_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="照片夹"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        
+        <LinearLayout
+            android:id="@+id/ll_zp_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_zp_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/os_jsh_zp_info_selector"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                style="@style/app_medium_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="抓拍信息"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_lx_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_lx_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/os_jsh_lx_info_selector"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                style="@style/app_medium_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="录像信息"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jjsh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_jjsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/os_dhb_syzx_kyk_jjsh_selector"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                style="@style/app_medium_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/os_dhb_syzx_kyk_jjsh"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

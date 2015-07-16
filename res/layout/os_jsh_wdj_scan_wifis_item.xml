@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="15dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/tv_ssid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/app_small_textStyle"
+            android:text="xxxxxxxxxx"/>
+        
+        <ImageView 
+            android:id="@+id/iv_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/os_jsh_wdj_wifi_list_item_lock"/>
+        
+        <ImageView 
+            android:id="@+id/iv_level"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/os_jsh_wdj_wifi_list_item_level_1"/>
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray4"/>
+    
+
+</LinearLayout>

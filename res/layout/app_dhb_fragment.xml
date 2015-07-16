@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/botll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/bhpTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bhpTabIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/bhpTabLabel"
+                style="@style/app_small_textStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bhpTabIcon"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contactTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/contactTabIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/contactTabLabel"
+                style="@style/app_small_textStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactTabIcon"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/syzxTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/syzxTabIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/syzxTabLabel"
+                style="@style/app_small_textStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/syzxTabIcon"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grzxTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/grzxTabIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/grzxTabLabel"
+                style="@style/app_small_textStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grzxTabIcon"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/iv_bottom_line"
+        android:layout_above="@id/botll"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/light_gray"/>
+
+    <LinearLayout
+        android:id="@+id/simple_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/iv_bottom_line"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

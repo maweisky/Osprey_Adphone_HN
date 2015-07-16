@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/rg_zpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_zpxx"
+                style="@style/app_big_textStyle2"
+                android:textColor="@color/os_dark_gray_white_selector"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/os_jsh_zpj_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/os_jsh_zpj_zpxx" />
+
+            <RadioButton
+                android:id="@+id/rb_lxxx"
+                style="@style/app_big_textStyle2"
+                android:textColor="@color/os_dark_gray_white_selector"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/os_jsh_zpj_selector"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/os_jsh_zpj_lxxx" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/simple_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

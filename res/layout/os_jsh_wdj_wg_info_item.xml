@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/os_view_selector2" 
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/os_list_wg_info_flag" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_list_select_flag"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_info_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/os_jsh_wg_info_icon" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/app_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:text="物管信息" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_name"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:text="2015/02/10 15:30:30" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/app_textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:text="content" />
+    </RelativeLayout>
+
+</RelativeLayout>

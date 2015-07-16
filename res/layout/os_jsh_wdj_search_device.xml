@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/loadingImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@anim/progress_round"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/id_tv_loadingmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"
+                android:text="@string/app_loading" />
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/tv_empty"
+            style="@style/app_text_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/empty_img"
+            android:gravity="center"
+            android:text="暂时搜索不到设备，请点击再试！"
+            android:visibility="gone" />
+
+       <!--  <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent" 
+            android:visibility="gone"/> -->
+       <osprey_adphone_hn.cellcom.com.cn.widget.xlistview.XListView
+        android:id="@+id/listview"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" 
+        android:visibility="gone">
+    </osprey_adphone_hn.cellcom.com.cn.widget.xlistview.XListView>
+    </LinearLayout>
+    
+
+</LinearLayout>

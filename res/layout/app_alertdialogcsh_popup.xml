@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/os_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/iv_popup_title"
+            style="@style/app_big_textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/app_warning" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_content"
+                            style="@style/app_textStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:lineSpacingMultiplier="1.2" />
+                    </LinearLayout>
+                </LinearLayout>
+            </osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView>
+            
+            <ImageView 
+                    android:layout_marginTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/light_gray"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+                
+                <TextView 
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1.0"
+                    style="@style/app_textStyle3"
+                    android:text="@string/app_ButtonTextNo"
+                    android:background="@drawable/actionsheet_bottomcsh_selector"/>
+                
+                
+                <ImageView 
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/light_gray"/>
+                <TextView 
+                    android:id="@+id/tv_ok"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1.0"
+                    style="@style/app_textStyle3"
+                    android:text="@string/app_ButtonTextYes"
+                    android:background="@drawable/actionsheet_bottomokcsh_selector"/>
+                
+                
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

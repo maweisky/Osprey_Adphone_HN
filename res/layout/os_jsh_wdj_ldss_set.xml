@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/app_medium_textStyle1"
+            android:textColor="@color/light_blue1"
+            android:text="@string/os_jsh_wdj_ldss_set"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView 
+                    style="@style/app_medium_textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/os_jsh_wdj_ldss_set_ssid"/>
+                 <TextView 
+                    android:id="@+id/tv_ssid"
+                    style="@style/app_medium_textStyle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/os_jsh_wdj_wifi_add_input_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <EditText
+                    android:id="@+id/et_password"
+                    style="@style/app_medium_textStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/os_jsh_wdj_wifi_add_qsrmm"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+            
+            
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/app_big_textStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/app_login_btnbg"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:text="@string/app_ButtonTextNext" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

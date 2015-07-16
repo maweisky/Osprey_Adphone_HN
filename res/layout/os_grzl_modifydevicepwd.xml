@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+		<osprey_adphone_hn.cellcom.com.cn.widget.RoundImageView
+                android:id="@+id/video_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/os_dhb_itempic" />
+
+            <TextView
+                android:id="@+id/videotv"
+                style="@style/app_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_white"
+                android:contentDescription="@null" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/old_pwd"
+                style="@style/app_medium_textStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_register_input"
+                android:hint="@string/os_input_old_device_pwd"
+                android:inputType="number"
+                android:password="true"
+                android:minHeight="45dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/new_pwd"
+                style="@style/app_medium_textStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_register_input"
+                android:hint="@string/os_input_new_device_pwd"
+                android:inputType="number"
+                android:password="true"
+                android:minHeight="45dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/re_new_pwd"
+                style="@style/app_medium_textStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_register_input"
+                android:hint="@string/os_input_re_new_device_pwd"
+                android:inputType="number"
+                android:password="true"
+                android:minHeight="45dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/subbtn"
+                style="@style/app_big_textStyle1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_login_btnbg"
+                android:minHeight="45dp"
+                android:text="@string/hsc_welcom_forgetsubmit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView>

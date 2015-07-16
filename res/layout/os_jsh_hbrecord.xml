@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/mainrl">
+
+    <ListView
+        android:id="@+id/list_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#ffffff"
+        android:scrollbars="none"
+        android:divider="@null" />
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/loadingImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@anim/progress_round"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/id_tv_loadingmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/app_loading"
+            android:textSize="16sp" />
+    </LinearLayout>
+	<include  layout="@layout/play_back_date_pick" />
+</RelativeLayout>

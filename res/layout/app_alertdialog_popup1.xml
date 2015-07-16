@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/os_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    style="@style/app_textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:lineSpacingMultiplier="1.2" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="5dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                    android:id="@+id/tv_ok"
+                    style="@style/app_textStyle3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/os_view_bottom_corner_selector1"
+                    android:gravity="center"
+                    android:text="@string/app_ButtonTextYes" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

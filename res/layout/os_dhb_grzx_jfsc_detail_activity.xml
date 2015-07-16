@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/os_ad_banner_layout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/tv_sp_name"
+                    style="@style/app_textStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_sp_describe"
+                    style="@style/app_medium_textStyle2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_sp_name"
+                    android:layout_margin="3dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_xyjf"
+                    style="@style/app_medium_textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_sp_describe"
+                    android:layout_margin="3dp"
+                    android:text="需要积分：" />
+
+                <TextView
+                    android:id="@+id/tv_jf"
+                    style="@style/app_textStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_sp_describe"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@id/tv_xyjf"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tv_yhjf"
+                    style="@style/app_big_textStyle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_sp_describe"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@id/tv_jf"/>
+                
+                <TextView
+                    android:id="@+id/tv_kc"
+                    style="@style/app_medium_textStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_xyjf"
+                    android:layout_margin="3dp"
+                    android:text="库存" />
+
+                <TextView
+                    android:id="@+id/tv_kc_num"
+                    style="@style/app_medium_textStyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_xyjf"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@id/tv_kc"
+                    android:text="0件" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_add_to_gwc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/os_dhb_grzx_jfsc_detail_gwc_selector" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/light_gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp" >
+
+            <TextView
+                android:id="@+id/tv_dh_num"
+                style="@style/app_medium_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:text="兑换数量" />
+
+            <EditText
+                android:id="@+id/et_sp_num"
+                style="@style/app_medium_textStyle"
+                android:layout_width="65dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/os_sp_num_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:text="1"
+                android:textCursorDrawable="@null" />
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_toRightOf="@id/et_sp_num"
+                android:background="@drawable/os_add_selector" />
+
+            <ImageView
+                android:id="@+id/iv_minus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_toLeftOf="@id/et_sp_num"
+                android:background="@drawable/os_minus_selector" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/light_gray" />
+
+        <TextView
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="13dp"
+            android:visibility="gone"
+            android:text="分类" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            style="@style/app_text_selector"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/empty_img"
+            android:gravity="center"
+            android:text="找不到相关数据，点击图片重新加载~"
+            android:visibility="gone" />
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.AutoGridView
+            android:id="@+id/auto_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dip"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="2"
+            android:visibility="gone"
+            android:verticalSpacing="10dip" >
+        </osprey_adphone_hn.cellcom.com.cn.widget.AutoGridView>
+    </LinearLayout>
+
+</ScrollView>

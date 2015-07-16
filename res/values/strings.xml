@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">鱼鹰</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- base -->
+    <string name="app_ButtonTextYes">确定</string>
+    <string name="app_ButtonTextNo">取消</string>
+    <string name="app_ButtonTextModify">修改</string>
+    <string name="app_ButtonTextAdd">添加</string>
+    <string name="app_ButtonTextDelete">删除</string>
+    <string name="app_progress">正在请求...</string>
+    <string name="app_nextpage">下一页</string>
+    <string name="app_ButtonTextSearch">查询</string>
+    <string name="app_ButtonTextReset">重置</string>
+    <string name="app_ButtonTextClear">清空</string>
+    <string name="app_ButtonTextBack">返回</string>
+    <string name="app_ButtonTextSave">保存</string>
+    <string name="app_ButtonTextSubmit">提交</string>
+    <string name="app_warning">温馨提示</string>
+    <string name="app_ButtonTextNext">下一步</string>
+    <string name="app_search">搜索</string>
+    <string name="app_checkversion">检查版本...</string>
+    <string name="app_net_error">网络不给力</string>
+    <string name="app_loading">加载中,请稍后...</string>
+    <string name="app_add_capture_notice">设备二维码，视频二维码卡片</string>
+    <string name="app_add_capture_sdtjsxt">手动添加摄像头</string>
+    <string name="app_add_capture_smewm">扫描二维码</string>
+    <string name="app_base_ts">功能正在建设中</string>
+    
+    <!-- main -->
+    <string name="os_main_dhb">电话煲</string>
+    <string name="os_main_jsh">家生活</string>
+    <string name="os_main_csh">车生活</string>
+    <!-- 商业中心 -->
+    <string name="os_dhb_syzx_kyk_indicator">看一看</string>
+    <string name="os_dhb_syzx_sys_indicator">扫一扫</string>
+    <string name="os_dhb_syzx_yyy_indicator">摇一摇</string>
+    <string name="os_dhb_syzx_zyz_indicator">转一转</string>
+    <string name="os_dhb_syzx_kyk_fdc">房地产</string>
+    <string name="os_dhb_syzx_kyk_qc">汽车</string>
+    <string name="os_dhb_syzx_kyk_spbj">食品保健</string>
+    <string name="os_dhb_syzx_kyk_xjd">小家电</string>
+    <string name="os_dhb_syzx_kyk_ylmr">医疗美容</string>
+    <string name="os_dhb_syzx_kyk_jjsh">家居生活</string>
+    <string name="os_dhb_syzx_kyk_smcp">数码产品</string>
+    <string name="os_dhb_syzx_kyk_lycx">旅游出行</string>
+    <string name="os_dhb_syzx_tjsp">特价商品</string>
+    <string name="os_dhb_syzx_hyp">换一批</string>
+    <string name="os_dhb_syzx_zq">赚钱</string>
+    <string name="os_dhb_syzx_yq">摇钱</string>
+    <string name="os_dhb_syzx_cj">抽奖</string>
+    <string name="os_dhb_syzx_zhf">赚话费</string>
+    <string name="os_dhb_syzx_zjf">赚积分</string>
+    <string name="os_dhb_syzx_qhb">抢红包</string>
+    <string name="os_dhb_syzx_cj_qad">亲爱的 </string>
+    <string name="os_dhb_syzx_cj_ndjf">，您的</string>
+    <string name="os_dhb_syzx_cj_wxts">温馨提示：</string>
+    <string name="os_dhb_syzx_cj_ts1">1、欢迎来幸运大转盘碰运气，消耗少量话费，即有机会获取奖励 </string>
+    <string name="os_dhb_syzx_cj_ts2">2、不同颜色表示不同奖励类型： </string>
+    <string name="os_dhb_syzx_cj_ts3">3、点击“开始抽奖”参加活动，指针指向的数值及对应的颜色，表示您所获得的奖励，快来试试吧 </string>
+    <string name="os_dhb_syzx_cj_jf">积分</string>
+    <string name="os_dhb_syzx_cj_yy">银元 </string>
+    <string name="os_dhb_syzx_cj_hf">话费 </string>
+    <string name="os_dhb_syzx_yq_ljgd">了解更多</string>
+    
+    <!-- 车生活 -->
+    <string name="os_csh_qctj">汽车体检</string>
+    <string name="os_csh_gj">轨迹</string>
+    <string name="os_csh_dzwl">电子围栏</string>
+    <string name="os_csh_dh">导航</string>
+    <string name="os_csh_wyzx">我要咨询</string>
+    <string name="os_csh_jjqz">紧急求助</string>
+    <string name="os_csh_zjzd">专家诊断</string>
+    <string name="os_csh_sz">设置</string>
+    <string name="os_csh_jin">京</string>
+    <string name="os_csh_pinpai">品牌</string>
+    <string name="os_csh_chexing">车型</string>
+    <string name="os_csh_vin">VIN码</string>
+    <string name="os_csh_bsx">变速箱</string>
+    <string name="os_csh_pl">排量</string>
+    <string name="os_csh_nk">年款</string>
+    <!-- 个人中心 -->
+    <string name="os_dhb_grzx_jfsc">积分商城</string>
+    <string name="os_dhb_grzx_gwc1">购物车</string>
+    <string name="os_dhb_grzx_wddd">我的订单</string>
+    <string name="os_dhb_grzx_yyk">银元库</string>
+    <string name="os_dhb_grzx_jfk">积分库</string>
+    <string name="os_dhb_grzx_hfk">话费库</string>
+    <string name="os_dhb_grzx_zhcz">账号充值</string>
+    <string name="os_dhb_grzx_cxzs">出行助手</string>
+    <string name="os_dhb_grzx_zbsh">周边生活</string>
+    <string name="os_dhb_grzx_shjf">生活缴费</string>
+    <string name="os_dhb_grzx_zxgw">在线购物</string>
+    <string name="os_dhb_grzx_grzl">个人资料</string>
+    <string name="os_dhb_grzx_dqye">当前余额</string>
+    <string name="os_dhb_grzx_gwc">我的订单</string>
+    <string name="os_dhb_grzx_my_order">我的订单</string>
+    <string name="os_dhb_grzx_hyy">欢迎页</string>
+    <string name="os_dhb_grzx_bz">帮助</string>
+    <string name="os_dhb_grzx_rjsj">软件升级</string>
+    <string name="os_dhb_grzx_gy">关于鱼鹰</string>
+    <string name="os_dhb_grzx_dhzx">兑换中心</string>
+    <string name="os_dhb_grzx_fx">分享</string>
+    <string name="os_dhb_grzx_tcdl">退出登录</string>
+    
+    <!-- 个人资料 -->
+    <string name="os_dhb_grzx_bc">保存</string>
+    <string name="os_dhb_grzx_nc">昵称</string>
+    <string name="os_dhb_grzx_zh">账号</string>
+    <string name="os_dhb_grzx_xb">性别</string>
+    <string name="os_dhb_grzx_xgmm">修改密码</string>
+    <string name="os_dhb_grzx_shr">收货人</string>
+    <string name="os_dhb_grzx_lxdh">联系电话</string>
+    <string name="os_dhb_grzx_sfdq">省份地区</string>
+    <string name="os_dhb_grzx_xxdz">详细地址</string>
+    <string name="os_dhb_grzx_yzbm">邮政编码</string>
+    <string name="os_dhb_grzx_wxts">温馨提示</string>
+    <string name="os_dhb_grzx_sfbcxg">是否保存修改</string>
+    
+    <string name="hsc_progress">加载中,请稍等...</string>
+    <!-- welcome -->
+    <string name="hsc_welcom_login">登录</string>
+    <string name="hsc_welcom_loginrememberpwdtext">记住密码</string>
+    <string name="hsc_welcom_reg">免费注册</string>
+    <string name="hsc_welcom_register">新用户注册</string>
+    <string name="hsc_welcom_registeryzm">请输入你手机收到的6位数验证码</string>
+    <string name="hsc_welcom_registersubmit">确认登录</string>
+    <string name="hsc_welcom_registerty">同意</string>
+    <string name="hsc_welcom_registerxy">鱼鹰应用使用条款与隐私规则</string>
+    <string name="hsc_welcom_forgetpwd">忘记密码</string>
+	<string name="hsc_welcom_forgetpwdregacount">手机号码:</string>
+	<string name="hsc_welcom_forgetpwdnewregpwd">新密码:</string>
+	<string name="hsc_welcom_forgetpwdregpwdconfirm">密码确认:</string>
+	<string name="hsc_welcom_forgetpwdregyzm">验证码:</string>
+	<string name="hsc_welcom_forgetpwdregyzmbtn">获取验证码</string>
+	<string name="hsc_welcom_forgetsubmit">确认提交</string>
+	<string name="hsc_btn_ty">马上来体验吧</string>
+	<string name="hsc_welcom_registerxycontent">
+	    \t1、重要提示\r\n
+	    湖南点亮科技有限公司 （以下简称“点亮”）在此特别提醒用户务必审慎阅读、充分理解《鱼鹰应用使用条款与隐私规则》（下称“本协议”）的条款内容（特别是粗体下划线标注的内容）。未成年人应在法定监护人陪同下阅读。除非用户接受本协议所有条款，否则用户无权下载、安装或使用本软件及其相关服务。用户的下载、安装、使用、账号获取和登录等行为将视为对本协议的接受，并同意接受本协议各项条款的约束。\r\n\r\n
+	    \t2、协议的范围\r\n
+		\t\t\t2.1本协议是用户与点亮之间关于下载、安装、使用、复制本软件，以及使用鱼鹰相关服务所订立的协议。\r\n
+		\t\t\t2.2本协议、本协议附件和与本软件使用的第三方软件或技术相关的协议或其他文件等，共同构成了本软件及服务的完整协议。\r\n\r\n
+		\t3、关于本软件\r\n
+		鱼鹰是点亮向用户提供的广告服务平台，以文字、图片等多种媒体形式，向用户提供包括但不限于电话煲、家生活、车生活、商业中心、个人中心等内容或功能。\r\n\r\n
+		\t4、知识产权声明\r\n
+		\t\t\t4.1软件的一切版权、商标权、专利权、商业秘密等知识产权，以及与软件相关的所有信息内容，包括但不限于：文字表述及其组合、图标、图饰、图表、色彩、界面设计、版面框架、有关数据、印刷材料或电子文档等均受中华人民共和国著作权法、商标法、专利法、反不正当竞争法和相应的国际条约以及其他知识产权法律法规的保护，除涉及第三方授权的软件或技术外，点亮享有上述知识产权。\r\n
+		\t\t\t4.2 未经点亮书面同意，用户不得为任何营利性或非营利性的目的自行实施、利用、转让或许可任何第三方实施、利用、转让上述知识产权，点亮保留追究上述未经许可行为的权利。\r\n\r\n
+		\t5、隐私保护声明\r\n
+		\t\t\t5.1用户同意点亮自动存储用户在使用鱼鹰软件及服务的过程中产生的信息，包括但不限于位置信息、设备信息、日志信息。\r\n
+		\t\t\t5.2点亮不会向合作伙伴提供、分享用户个人信息，除非合作伙伴根据点亮的指示并遵循点亮的隐私保护政策以及其他任何相应的保密和安全措施来处理这些信息。\r\n
+		\t\t\t5.3在如下情况下，点亮可能会披露用户的个人信息：（1）事先获得用户的授权；（2）用户使用共享功能；（3）根据法律、法规、法律程序的要求或政府主管部门的强制性要求；（4）以学术研究或公共利益为目的，且不包含任何个人身份识别信息；（5）为维护点亮的合法权益，例如查找、预防、处理欺诈或安全方面的问题；（6）符合相关服务条款或使用协议的规定；（7）其他有利于点亮和用户共同利益目的。\r\n
+		\t\t\t5.4点亮非常重视对未成年人个人信息的保护。若用户是18周岁以下的未成年人，在使用点亮的软件前，应事先取得用户家长或法定监护人的同意。\r\n\r\n
+		\t6、用户使用规则\r\n
+		\t\t\t6.1 用户可以从点亮的官方途径获取本软件，也可以从点亮授权的第三方途径获取。如果用户从未经点亮授权的第三方获取本软件或与本软件名称相同的安装程序，点亮无法保证该软件能够正常使用，并对因此给用户造成的损失不予负责。\r\n
+		\t\t\t6.2用户在使用本服务前需要注册一个账号，请用户在注册时详尽、准确地提供个人资料，并更新注册资料。因注册信息不真实而引起的问题，由用户自行承担相应的后果。\r\n
+		\t\t\t6.3账号的所有权归点亮公司所有，用户完成申请注册手续后，仅获得账号的使用权，且该使用权仅属于初始申请注册人。\r\n
+		\t\t\t6.4初始申请注册人不得赠与、借用、租用、转让或售卖账号或者以其他方式许可非初始申请注册人使用账号。非初始申请注册人不得通过受赠、继承、承租、受让或者其他任何方式使用账号。\r\n
+		\t\t\t6.5如用户发现账号遭他人非法使用，应立即通知点亮。互联网上不排除因黑客行为或用户的保管疏忽导致账号、密码遭他人非法使用，此类情况与点亮无关。\r\n
+		\t\t\t6.6对于用户通过本软件公开发布的任何内容，用户同意点亮在全世界范围内具有免费的、永久性的、不可撤销的、非独家的和完全再许可的权利和许可，以使用、复制、修改、改编、出版、翻译、据以创作衍生作品、传播、表演和展示此等内容（整体或部分），和/或将此等内容编入当前已知的或以后开发的其他任何形式的作品、媒体或技术中。\r\n
+		\t\t\t6.7为了向用户提供有效的服务，本软件使用过程中可能产生数据流量费用，用户需自行向运营商了解相关资费信息，并自行承担相关费用。\r\n
+		\t\t\t6.8本软件的某些功能可能会让第三方知晓用户的信息，例如：用户的头像、名字等可公开的个人资料。\r\n
+		\t\t\t6.9用户同意点亮将会尽其商业上的合理努力保障用户在本软件及服务中的数据存储安全，但是，点亮并不能就此提供完全保证，包括但不限于以下情形：\r\n
+		\t\t\t6.9.1 点亮不对用户在本软件及服务中相关数据的删除或储存失败负责；\r\n
+		\t\t\t6.9.2点亮有权根据实际情况自行决定单个用户在本软件及服务中数据的最长储存期限，并在服务器上为其分配数据最大存储空间等。用户可根据自己的需要自行备份本软件及服务中的相关数据；\r\n
+		\t\t\t6.9.3如果用户停止使用本软件及服务或服务被终止或取消，点亮可以从服务器上永久地删除用户的数据。服务停止、终止或取消后，点亮没有义务向用户返还任何数据。\r\n
+		\t\t\t6.10用户在使用本软件及服务时，须自行承担如下来自点亮不可掌控的风险内容，包括但不限于：\r\n
+		\t\t\t6.10.1 由于不可抗拒因素可能引起的个人信息丢失、泄漏等风险；\r\n
+		\t\t\t6.10.2 用户必须选择与所安装手机相匹配的软件版本，否则，由于软件与手机型号不相匹配所导致的任何问题或损害，均由用户自行承担；\r\n
+		\t\t\t6.10.3 用户发布的内容被他人转发、分享，因此等传播可能带来的风险和责任。\r\n
+		\t\t\t6.11除非法律允许或点亮书面许可，用户使用本服务过程中不得从事下列行为：\r\n
+		\t\t\t6.11.1 提交、发布虚假信息，或冒充、利用他人名义的；\r\n
+		\t\t\t6.11.2 诱导其他用户点击链接页面或分享信息的；\r\n
+		\t\t\t6.11.3 虚构事实、隐瞒真相以误导、欺骗他人的；\r\n
+		\t\t\t6.11.4 侵害他人名誉权、肖像权、知识产权、商业秘密等合法权利的；\r\n
+		\t\t\t6.11.5 未经点亮书面许可利用账号和任何功能，以及第三方运营平台进行推广或互相推广的；\r\n
+		\t\t\t6.11.6 利用账号或本软件及服务从事任何违法犯罪活动的；\r\n
+		\t\t\t6.11.7 制作、发布与以上行为相关的方法、工具，或对此类方法、工具进行运营或传播，无论这些行为是否为商业目的；\r\n
+		\t\t\t6.11.8 其他违反法律法规规定、侵犯其他用户合法权益、干扰本软件及服务正常运营或点亮未明示授权的行为。\r\n\r\n
+		\t7、信息内容规则\r\n
+		\t\t\t7.1本条所述信息内容是指用户使用本软件及服务过程中制作、复制、发布、传播的任何内容，包括但不限于账号头像、名字、用户说明等注册信息，或文字、语音、图片等发送、回复、相关链接页面，以及其他使用账号或本软件及服务所产生的内容。\r\n
+		\t\t\t7.2用户不得利用账号或本软件及服务制作、复制、发布、传播如下干扰软件正常运营，以及侵犯其他用户或第三方合法权益的内容，包括但不限于：\r\n
+		\t\t\t7.2.1发布、传送、传播、储存违反国家法律、危害国家安全统一、社会稳定、公序良俗、社会公德以及侮辱、诽谤、淫秽或含有任何性或性暗示的、暴力的内容；\r\n
+		\t\t\t7.2.2 发布、传送、传播、储存侵害他人名誉权、肖像权、知识产权、商业秘密等合法权利的内容；\r\n
+		\t\t\t7.2.3其他违反法律法规、政策及公序良俗、社会公德或干扰点亮正常运营和侵犯其他用户或第三方合法权益内容的信息。\r\n
+		\t\t\t7.3用户发送或传播的内容应有合法来源，相关内容为用户所有或用户已获得权利人的授权。\r\n
+		\t\t\t7.4用户通过本软件及服务发送或传播的内容（包括但不限于网页、文字、图片、音频、视频、图表等）均由用户自行承担责任。\r\n
+		\t\t\t7.5如果点亮收到权利人通知，主张用户发送或传播的内容侵犯其相关权利的，用户同意点亮有权进行独立判断并采取删除、屏蔽或断开链接等措施。同时，点亮有权视用户的行为性质，采取包括但不限于暂停或终止服务，限制、冻结或终止使用，追究法律责任等措施。\r\n\r\n
+		\t8、商业广告推广\r\n
+		\t\t\t8.1用户同意点亮可以在提供服务的过程中自行或由第三方向用户发送广告、推广或宣传信息（包括商业与非商业信息），其方式和范围可不经向用户特别通知而变更。\r\n
+		\t\t\t8.2用户同意，对点亮服务中出现的广告信息，用户应审慎判断其真实性和可靠性，除法律明确规定外，用户应对依该广告信息进行的交易负责。\r\n\r\n
+		\t9、第三方软件和技术\r\n
+		\t\t\t9.1本软件可能会使用第三方软件或技术（包括本软件可能使用的开源代码和公共领域代码等，下同），这种使用已经获得合法授权。\r\n
+		\t\t\t9.2本软件如果使用了第三方的软件或技术，点亮将按照相关法规或约定，对相关的协议或其他文件，可能通过本协议附件、在本软件安装包特定文件夹中打包等形式进行展示，它们可能会以“软件使用许可协议”、“授权协议”、“开源代码许可证”或其他形式来表达。前述通过各种形式展现的相关协议或其他文件，均是本协议不可分割的组成部分，与本协议具有同等的法律效力，用户应当遵守这些要求。\r\n
+		\t\t\t9.3 如因本软件使用的第三方软件或技术引发的任何纠纷，应由该第三方负责解决，点亮不承担任何责任。点亮不对第三方软件或技术提供客服支持，若用户需要获取支持，请与第三方联系。\r\n\r\n
+		\t10、不可抗力及其他免责事由\r\n
+		\t\t\t10.1用户理解并同意，在使用本服务的过程中，可能会遇到不可抗力等风险因素，使本服务发生中断。不可抗力是指不能预见、不能克服并不能避免且对一方或双方造成重大影响的客观事件，包括但不限于自然灾害如洪水、地震、瘟疫流行和风暴等以及社会事件如战争、动乱、政府行为等。出现上述情况时，点亮将努力在第一时间与相关单位配合，及时进行修复，但是由此给用户造成的损失点亮在法律允许的范围内免责。
+		\t\t\t10.2在法律允许的范围内，点亮对以下情形导致的服务中断或受阻不承担责任：\r\n
+		\t\t\t10.2.1受到计算机病毒、木马或其他恶意程序、黑客攻击的破坏；\r\n
+		\t\t\t10.2.2用户或点亮的电脑软件、系统、硬件和通信线路出现故障；\r\n
+		\t\t\t10.2.3用户操作不当；\r\n
+		\t\t\t10.2.4其他点亮无法控制或合理预见的情形。\r\n
+		\t\t\t10.3用户理解并同意，在使用本服务的过程中，可能会遇到网络信息或其他用户行为带来的风险，点亮不对任何信息的真实性、适用性、合法性承担责任，也不对因侵权行为给用户造成的损害负责。这些风险包括但不限于：\r\n
+		\t\t\t10.3.1来自他人匿名或冒名的含有威胁、诽谤、令人反感或非法内容的信息；\r\n
+		\t\t\t10.3.2因使用本协议项下的服务，遭受他人误导、欺骗或其他导致或可能导致的任何心理、生理上的伤害以及经济上的损失；\r\n
+		\t\t\t10.3.3其他因网络信息或用户行为引起的风险。\r\n
+		\t\t\t10.3.4点亮依据本协议约定获得处理违法违规内容的权利，该权利不构成点亮的义务或承诺，点亮不能保证及时发现违法行为或进行相应处理。\r\n\r\n
+		\t11、违约责任\r\n
+		\t\t\t11.1如果用户违反了本协议的约定，相关国家机关或机构可能会对用户提起诉讼、罚款或采取其他制裁措施，并要求点亮给予协助。造成损害的，用户应依法予以赔偿，点亮不承担任何责任。\r\n
+		\t\t\t11.2用户违反本协议约定，导致任何第三方损害的，用户应当独立承担责任；点亮因此遭受损失的，用户也应当一并赔偿。\r\n
+		\t\t\t11.3 用户理解并同意，点亮有权依合理判断对违反有关法律法规或本协议规定的行为进行追究法律责任，对违法违规的任何用户采取适当的法律行动，并依据法律法规保存有关信息向有关部门报告等，用户应独自承担由此而产生的一切法律责任。\r\n\r\n
+		\t12、其他\r\n
+		\t\t\t12.1 本协议的成立、生效、履行、解释及纠纷解决，适用中华人民共和国大陆地区法律（不包括冲突法）。\r\n
+		\t\t\t12.2用户使用本软件即视为已阅读并同意受本协议的约束点亮有权在必要时修改本协议条款。用户可以在本软件的最新版本中查阅相关协议条款。本协议条款变更后，如果用户继续使用本软件，即视为已接受修改后的协议。如果用户不接受修改后的协议，应当停止使用本软件。\r\n
+		\t\t\t12.3 若用户和点亮之间发生任何纠纷或争议，首先应友好协商解决；协商不成的，用户同意将纠纷或争议提交湖南省长沙市芙蓉区人民法院管辖。\r\n
+		\t\t\t12.4本协议所有条款的标题仅为阅读方便，本身并无实际涵义，不能作为本协议涵义解释的依据。\r\n
+		\t\t\t12.5 本协议条款无论因何种原因部分无效或不可执行，其余条款仍有效，对双方具有约束力。\r\n
+	</string>
+    <!-- 电话煲 -->
+    <string name="os_dhb_contact_add">添加新的联系人</string>
+    <string name="os_dhb_contact_search">搜索</string>
+    <string name="os_dhb_bhmt">免提</string>
+    <string name="os_dhb_bhqx">取消</string>
+    <string name="os_dhb_bhzzhj">正在呼叫,请稍后</string>
+    <string name="os_dhb_php">请输入手机号码，固话前加拨区号</string>
+    
+    <!-- 家生活-我的家 -->
+    <string name="os_jsh_wdj_sf">设  防</string>
+    <string name="os_jsh_wdj_bf">播放</string>
+    <string name="os_jsh_wdj_hf">回放</string>
+    <string name="os_jsh_wdj_lshf">历史回放</string>
+    <string name="os_jsh_wdj_hf_zjyt">最近一天</string>
+    <string name="os_jsh_wdj_hf_zjst">最近三天</string>
+    <string name="os_jsh_wdj_hf_zjyy">最近一月</string>
+    <string name="os_jsh_wdj_hf_zdy">自定义</string>
+    <string name="os_jsh_wdj_hf_year">年</string>
+    <string name="os_jsh_wdj_hfmonth">月</string>
+    <string name="os_jsh_wdj_day">日</string>
+    <string name="os_jsh_wdj_hour">时</string>
+    <string name="os_jsh_wdj_minutes">分</string>
+    <string name="os_jsh_wdj_sz">设置</string>
+    <string name="os_jsh_wdj_bj">编辑</string>
+    <string name="os_jsh_wdj_online">在线</string>
+    <string name="os_jsh_wdj_offline">离线</string>
+    <string name="os_jsh_wdj_loading">连接中</string>
+    <string name="os_jsh_wdj_djtjspsb">点击添加视频设备</string>
+    <string name="os_jsh_wdj_add_tjsxt">添加摄像头</string>
+    <string name="os_jsh_wdj_add_ylwsb">已联网设备</string>
+    <string name="os_jsh_wdj_add_smewm">扫描二维码</string>
+    <string name="os_jsh_wdj_add_sdtj">手动添加</string>
+    <string name="os_jsh_wdj_add_wifi">wifi添加</string>
+    <string name="os_jsh_wdj_add_ssjyw">搜索局域网</string>
+    <string name="os_jsh_wdj_add_ldss">雷达搜索</string>
+    <string name="os_jsh_wdj_sbsz">设备设置</string>
+    <string name="os_jsh_wdj_sbsz_bjsz">报警设置</string>
+    <string name="os_jsh_wdj_sbsz_lxsz">录像设置</string>
+    <string name="os_jsh_wdj_sbsz_fqsz">防区设置</string>
+    <string name="os_jsh_wdj_sbsz_sjsz">时间设置</string>
+    <string name="os_jsh_wdj_sbsz_wlsz">网络设置</string>
+    <string name="os_jsh_wdj_sbsz_mmsz">密码设置</string>
+    <string name="os_jsh_wdj_sbsz_bjsz_bjyx">报警邮箱</string>
+    <string name="os_jsh_wdj_sbsz_bjsz_bjxx">报警信息</string>
+    <string name="os_jsh_wdj_sbsz_bjsz_ydzc">移动侦测</string>
+    <string name="os_jsh_wdj_sbsz_bjsz_fmq">蜂鸣器</string>
+    <string name="os_jsh_wdj_wifi_add_qsrmc">请输入wifi名称</string>
+    <string name="os_jsh_wdj_wifi_add_qsrmm">请输入wifi密码</string>
+    <string name="os_jsh_wdj_wifi_add_xzwl">选择网络</string>
+    <string name="os_jsh_wdj_wifi_add_smewm">扫描二维码配置wifi</string>
+    <string name="os_jsh_wdj_edit_sbid">设备ID</string>
+    <string name="os_jsh_wdj_edit_ndzz">您的地址</string>
+    <string name="os_jsh_wdj_edit_mc">名称</string>
+    <string name="os_jsh_wdj_edit_sxtsz">摄像头设置</string>
+    <string name="os_jsh_wdj_edit_cs">城市</string>
+    <string name="os_jsh_wdj_edit_xq">小区</string>
+    <string name="os_jsh_wdj_edit_fh">房号</string>
+    <string name="os_jsh_wdj_edit_mm">密码</string>
+    <string name="os_jsh_wdj_edit_fm">封面</string>
+    <string name="os_jsh_wdj_edit_hint_1">请输入设备名称</string>
+    <string name="os_jsh_wdj_edit_hint_2">请输入设备密码</string>
+    <string name="os_jsh_wdj_edit_hint_3">请选择所在省、市、区</string>
+    <string name="os_jsh_wdj_edit_hint_4">请选择所在小区</string>
+    <string name="os_jsh_wdj_edit_hint_5">请选择所在楼栋与房号</string>
+    <string name="os_jsh_wdj_edit_sxttxsz">摄像头头像设置</string>
+    <string name="os_jsh_wdj_edit_tzsxt">添加摄像头</string>    
+    <string name="os_jsh_wdj_edit_bjsb">编辑设备</string>
+    <string name="os_jsh_wdj_ewm_bz">帮助</string>
+    <string name="os_jsh_wdj_ewm_notice">请将摄像头对准二维码，直到听到叮的一声</string>
+    <string name="os_jsh_wdj_mmcw">密码错误</string>
+    <string name="os_jsh_wdj_wlyc">网络异常</string>
+    <string name="os_jsh_wdj_zwqx">暂无权限</string>
+    <string name="os_jsh_wdj_ldss_set_ssid">SSID：</string>
+    <string name="os_jsh_wdj_ldss_set">提示：设备WIFI与手机WIFI在同一局域网中，请填写该WIFI密码。</string>
+    <string name="os_jsh_wdj_ldss_tdl">听到了</string>
+    <string name="os_jsh_wdj_ldss_qx">取  消</string>
+    <string name="os_jsh_wdj_add_device_wlwsb">未联网设备</string>
+    <string name="os_jsh_wdj_add_device_ylwsb">已联网设备</string>
+    <string name="os_jsh_wdj_ldss_send">等到听到“叮”的一声，是否听到？</string>
+    <string name="os_jsh_wdj_ldss_text1">欢迎使用，您需要准备好</string>
+    <string name="os_jsh_wdj_ldss_text2">您需要先将您的手机或者平板连接至WIFI网络，设备WIFI与其在同一局域网中。</string>
+    <string name="os_jsh_wdj_ldss_znsxj">智能摄像机</string>
+    <string name="os_jsh_wdj_ldss_ljdy">连接电源</string>
+    <string name="os_jsh_wdj_ldss_wifi">wifi网络</string>
+    <string name="os_jsh_wdj_ldss_wxts">温馨提示：</string>
+    <string name="os_jsh_wdj_ldss_bzts">不再提示</string>
+    <string name="os_jsh_zpj_zpxx">照片信息</string>
+    <string name="os_jsh_zpj_lxxx">录像信息</string>
+    <string name="os_jsh_zpj">照片夹</string>
+    <string name="os_jsh_pzlx">拍照录像</string>
+    <string name="os_jsh_set">设置</string>
+    <string name="os_jsh_speak">对话</string>
+    
+    
+    <string name="os_jsh_wdj_hf_kssj">开始时间</string>
+    <string name="os_jsh_wdj_hf_jssj">结束时间</string>
+    <string name="os_device_time">设备时间</string>
+    <string name="os_urban_settings">时区设置:</string>
+    <string name="os_delete_account">删除账号</string>
+    <string name="os_inputpassword">请输入密码</string>
+    <string name="os_UTC">UTC</string>
+    <string name="os_confirm">确定</string>
+    <string name="os_change">更改</string>
+    <string name="keyboard_no1">1</string>
+    <string name="keyboard_no2">2</string>
+    <string name="keyboard_no3">3</string>
+    <string name="keyboard_no4">4</string>
+    <string name="keyboard_no5">5</string>
+    <string name="keyboard_no6">6</string>
+    <string name="keyboard_no7">7</string>
+    <string name="keyboard_no8">8</string>
+    <string name="keyboard_no9">9</string>
+    <string name="keyboard_nox">*</string>
+    <string name="keyboard_no0">0</string>
+    <string name="keyboard_noj">#</string>
+    
+    <!-- p2p -->
+    <string name="os_session_id_error">会话已过期，请重新登录</string>
+    <string name="os_email_used">邮箱已被注册</string>
+    <string name="os_email_format_error">邮箱格式错误</string>
+    <string name="os_operator_error">操作失败</string>
+    <string name="os_account_no_exist">账户不存在</string>
+    <string name="os_password_error">密码错误</string>
+    <string name="os_insufficient_permissions">权限不足</string>
+    <string name="os_loginfail">登录失败</string>
+    <string name="os_pwd_inconsistence">您两次输入的密码不一致</string>
+    <string name="os_old_pwd_error">旧密码错误</string>
+    <string name="os_modify_pwd_success">密码修改成功，请重新登录</string>
+    <string name="os_message_net_connect">连接到网络：</string>
+    <string name="os_network_error">网络异常</string>
+    <string name="os_pw_incrrect">密码错误</string>
+    <string name="os_busy">对方忙线</string>
+    <string name="os_none">未知原因</string>
+    <string name="os_id_disabled">对方的id被禁用</string>
+    <string name="os_id_inactived">对方的id未激活</string>
+    <string name="os_id_overdate">对方的id已过期</string>
+    <string name="os_offline">对方离线</string>
+    <string name="os_powerdown">对方关机</string>
+    <string name="os_nohelper">连接失败</string>
+    <string name="os_hungup">挂断</string>
+    <string name="os_timeout">网络连接超时</string>
+    <string name="os_no_body">无人接听</string>
+    <string name="os_internal_error">内部错误</string>
+    <string name="os_conn_fail">连接失败</string>
+    <string name="os_reason">可能的原因：</string>
+    <string name="os_connect_failed_reason1">1.输入错误的Wi-Fi密码</string>
+    <string name="os_connect_failed_reason2">2.摄像头不支持5G网络</string>
+    <string name="os_connect_failed_reason3">3.当前网络环境较差</string>
+    <string name="os_not_support">不支持</string>
+    <string name="os_press_again">再按一次退出通话</string>
+    <string name="os_press_again_monitor">再按一次退出监控</string>
+    <string name="os_video_mode_hd">高清</string>
+    <string name="os_video_mode_ld">流畅</string>
+    <string name="os_video_mode_sd">标清</string>
+    <string name="os_capture_failed">截图失败</string>
+    <string name="os_capture_success">截图成功</string>
+    <string name="os_email_too_long">邮箱长度必须是5-31个字符</string>
+    <string name="os_modify_success">修改成功</string>
+    <string name="os_net_error_operator_fault">网络异常，操作失败</string>
+    <string name="os_unbound">未绑定</string>
+    <string name="os_jsh_wdj_xgbjyx">修改报警邮箱</string>
+    <string name="os_learing_code">学习对码</string>
+    <string name="os_learing_code_prompt">点击确定，触发将要学习的无线设备</string>
+    <string name="os_clear_code">清除</string>
+    <string name="os_clear_code_prompt">你确定清除?</string>
+    <string name="os_clear_success">清除成功</string>
+    <string name="os_learning_success">学习成功</string>
+    <string name="os_channel">通道</string>
+    <string name="os_has_been_learning">已被学习</string>
+    <string name="os_remote">遥控</string>
+    <string name="os_hall">大厅</string>
+    <string name="os_window">窗户</string>
+    <string name="os_balcony">阳台</string>
+    <string name="os_bedroom">卧室</string>
+    <string name="os_kitchen">厨房</string>
+    <string name="os_courtyard">庭院</string>
+    <string name="os_door_lock">门锁</string>
+    <string name="os_other">其它</string>
+    <string name="os_device_unsupport_defence_area">当前设备不支持防区</string>
+    <string name="os_jsh_wdj_sbsz_lxsz_blx">不录像</string>
+    <string name="os_jsh_wdj_sbsz_lxsz_bjlx">报警录像</string>
+    <string name="os_jsh_wdj_sbsz_lxsz_qthlx">全天候录像</string>
+    <string name="os_net_error">网络异常</string>
+    <string name="os_no_next_file">无下一个文件</string>
+    <string name="os_no_previous_file">无上一个文件</string>
+    <string name="os_Press_again_exit">再按一次退出播放</string>
+    <string name="os_alarm_push_limit">报警接收人数已达上限</string>
+    <string name="os_allarm_robot">ID：</string>
+    <string name="os_allarm_type">类型：</string>
+    <string name="os_allarm_mingc">名称：</string>
+    <string name="os_check">查看</string>
+    <string name="os_ignore">忽略</string>
+    <string name="os_shielded">撤防</string>
+    <string name="os_input_monitor_pwd">请输入监控密码</string>
+    <string name="os_alarm_info">报警信息</string>
+    <string name="os_allarm_type1">外部报警</string>
+    <string name="os_allarm_type2">移动侦测</string>
+    <string name="os_allarm_type3">紧急报警</string>
+    <string name="os_allarm_type4">人体红外报警</string>
+    <string name="os_allarm_type5">有线报警</string>
+    <string name="os_allarm_type6">低电压报警</string>
+    <string name="os_area">防区</string>
+    <string name="os_low_voltage_alarm">低电压报警</string>
+    <string name="os_no_defence">撤防</string>
+    <string name="os_defence">布防</string>
+    <string name="os_battery_low_alarm">电池低电报警</string>
+    <string name="os_door_bell">门铃</string>
+    <string name="os_visitor_messge">访客信息</string>
+    <string name="os_not_know">未知</string>
+    <string name="os_record_failed">录像故障</string>
+    <string name="os_ignore_alarm_prompt_start"></string>
+    <string name="os_ignore_alarm_prompt_end">秒内不接收报警信息</string>
+    <string name="os_password_length_error">密码太长</string>
+    <string name="os_shielded_alarm_promp">设备撤防后，将不再接收此设备的报警推送。</string>
+    <string name="os_ensure">确定</string>
+    <string name="os_cancel">取消</string>
+    <string name="os_search_error1">请输入开始时间</string>
+    <string name="os_search_error2">请输入结束时间</string>
+    <string name="os_search_error3">开始时间必须在结束时间之前</string>
+    <string name="monitor_id_must_include_digit">监控ID必须包含数字</string>
+    <string name="call_id_must_include_digit">通话ID必须包含数字</string>
+    <string name="p2p_call_push_mesg">呼叫中</string>
+    <string name="hungup">挂断</string>
+    <string name="connecting_to">正在连接</string>
+    <string name="calling_to">正在呼叫</string>
+    <string name="reject">拒绝</string>
+
+    <string name="os_input_old_device_pwd">请输入旧的管理密码</string>
+    <string name="os_input_new_device_pwd">请输入新的管理密码</string>
+    <string name="os_input_re_new_device_pwd">请再输入一次密码</string>
+    <string name="os_old_pwd_too_long">原密码长度不能超过10个字符</string>
+    <string name="os_new_pwd_too_long">新密码长度不能超过10个字符</string>
+    <string name="os_contact_pwd_must_digit">设备密码必须是数字组合,并且不能以\'0\'开头</string>
+	<string name="os_click_refresh">轻触屏幕刷新</string>
+	<string name="os_time_setting">应用</string>
+	<string name="os_timezone_success">时区设置成功</string>
+	<string name="os_net_wired">有线</string>
+	<string name="os_net_wifi">WiFi</string>
+	<string name="os_list_wifi">无线网络列表</string>
+	<string name="os_net_type">网络类型</string>
+	<string name="os_wifi_pwd_format_error">Wifi密码格式错误</string>
+	<string name="os_check_update">检查更新</string>
+	<string name="os_about_s">关于 </string>
+	 <string name="os_device_info">设备信息</string>
+	 <string name="os_current_version">当前版本</string>
+	 <string name="os_rootfsVersion">系统版本</string>
+	 <string name="os_kernelVersion">内核版本</string>
+	  <string name="os_uBootVersion">uBoot版本</string>
+	  <string name="os_warning">警告</string>
+	  <string name="os_modify_net_warning">修改网络可能造成设备断开连接，请确认操作！</string>
+	  <string name="os_change_wifi">更改Wifi</string>
+	  <string name="os_input_wifi_pwd">请输入WiFi密码</string>
+	  <string name="os_verification">等待验证</string>
+     <!-- jazzyviewpager -->
+	<string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    
+	<!-- xlistview -->
+	<string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_footer_hint_click">点击载入更多</string>
+    
+	<style name="CustomDialog" parent="@android:style/Theme.Dialog">  
+    	<item name="android:windowFrame">@null</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>  
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>  
+    </style>  
+      
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">  
+        <item name="android:windowBackground">@android:color/transparent</item>  
+        <item name="android:windowNoTitle">true</item>  
+    </style>
+
+</resources>

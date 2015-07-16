@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.RoundImageView
+            android:id="@+id/video_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@null"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/os_dhb_itempic" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/videotv"
+        style="@style/app_textStyle2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_bar"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/ivline"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/videotv"
+        android:background="@color/gray_white"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivline"
+        android:gravity="center_vertical"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/search_one_day"
+            style="@style/app_textStyle2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/os_jsh_wdj_hf_zjyt" />
+
+        <TextView
+            android:id="@+id/search_three_day"
+            style="@style/app_textStyle2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/os_jsh_wdj_hf_zjst"/>
+
+        <TextView
+            android:id="@+id/search_one_month"
+            style="@style/app_textStyle2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/os_jsh_wdj_hf_zjyy"/>
+
+        <TextView
+            android:id="@+id/search_detail"
+            style="@style/app_textStyle2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/os_jsh_wdj_hf_zdy"/>
+    </LinearLayout>
+	<ImageView
+        android:id="@+id/ivbotline"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/search_bar"
+        android:background="@color/gray_white"
+        android:contentDescription="@null" />
+    <LinearLayout
+        android:id="@+id/cursor_bar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/ivbotline"
+        android:paddingBottom="1dip"
+        android:paddingTop="1dp" >
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+        	android:scaleType="matrix"
+            android:src="@drawable/os_jsh_hfcursor" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/record_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cursor_bar" >
+    </RelativeLayout>
+
+    <include layout="@layout/play_back_date_pick" />
+
+</RelativeLayout>

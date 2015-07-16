@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/newyx"
+                style="@style/app_medium_textStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_register_input"
+                android:hint="请输入新邮箱"
+                android:minHeight="45dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/subbtn"
+                style="@style/app_big_textStyle1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:background="@drawable/app_login_btnbg"
+                android:text="@string/hsc_welcom_forgetsubmit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView>

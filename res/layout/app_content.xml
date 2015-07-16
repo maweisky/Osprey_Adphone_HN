@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_app_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layMainBody"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topll"
+        android:orientation="vertical" />
+
+</RelativeLayout>

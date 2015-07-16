@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/rl_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/os_view_selector1"
+        >
+        <TextView 
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            style="@style/app_medium_textStyle2"
+            android:text="08-08 17:24"/>
+        
+        <TextView 
+            android:visibility="gone"
+            android:id="@+id/tv_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/app_medium_textStyle2"
+            android:text="获得：20元"/>
+        
+        <osprey_adphone_hn.cellcom.com.cn.widget.MarqueeText 
+            android:layout_toRightOf="@id/tv_time"
+            android:layout_toLeftOf="@id/tv_prize"
+            android:id="@+id/tv_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            style="@style/app_medium_textStyle2"
+            android:text="兑换了积分"/>
+        
+        
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/light_gray"/>
+
+</LinearLayout>

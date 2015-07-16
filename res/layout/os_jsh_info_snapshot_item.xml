@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+        
+    
+    <RelativeLayout 
+        android:id="@+id/rl_snapShot"
+        android:layout_width="160dp"
+        android:layout_height="120dp">
+        
+       
+        
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/os_jsh_info_item_icon_2" />
+        
+        <ImageView 
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:background="@drawable/os_jsh_wdj_item_play_selector"/>
+        
+         <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:minWidth="50dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:background="@color/Translucent_black">
+            
+            <TextView 
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"                
+                style="@style/app_small_textStyle1"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@color/Translucent_black">
+            
+            <TextView 
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"                
+                style="@style/app_small_textStyle1"/>
+            
+        </LinearLayout>
+        
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

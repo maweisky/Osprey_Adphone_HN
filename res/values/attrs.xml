@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- JazzyViewPager -->
+    <declare-styleable name="JazzyViewPager">
+        <attr name="style">
+            <enum name="standard" value="0" />
+            <enum name="tablet" value="1" />
+            <enum name="cubein" value="2" />
+            <enum name="cubeout" value="3" />
+            <enum name="flipvertical" value="4" />
+            <enum name="fliphorizontal" value="5" />
+            <enum name="stack" value="6" />
+            <enum name="zoomin" value="7" />
+            <enum name="zoomout" value="8" />
+            <enum name="rotateup" value="9" />
+            <enum name="rotatedown" value="10" />
+            <enum name="accordion" value="11" />
+        </attr>
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="outlineEnabled" format="boolean" />
+        <attr name="outlineColor" format="color|reference" />
+    </declare-styleable>
+    
+    
+    <!-- TitleIndicator -->
+    <declare-styleable name="TitleIndicator">
+        <attr name="titlePadding" format="dimension" />
+        <!-- Left/right padding of not active view titles. -->
+        <attr name="clipPadding" format="dimension" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSizeNormal" format="dimension" />
+        <attr name="textSizeSelected" format="dimension" />
+        <attr name="footerLineHeight" format="dimension" />
+        <attr name="footerColor" format="color" />
+        <attr name="footerTriangleHeight" format="dimension" />
+    </declare-styleable>
+    
+    <!-- RightSlidingMenu -->
+    <declare-styleable name="RightSlidingMenu">
+        <attr name="leftPadding" format="dimension"/>
+    </declare-styleable>
+    
+    <!-- ViewFlow -->
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="viewflow_radius" format="dimension" />
+		<attr name="centered" format="boolean" />
+		<attr name="fadeOut" format="integer" />
+		<attr name="inactiveType">
+			<flag name="stroke" value="0" />
+			<flag name="fill" value="1" />
+		</attr>
+		<attr name="activeType">
+			<flag name="stroke" value="0" />
+			<flag name="fill" value="1" />
+		</attr>
+		<attr name="circleSeparation" format="dimension" />
+		<attr name="activeRadius" format="dimension" />
+    </declare-styleable>
+    
+    <!-- FButton openlibrary -->
+    <declare-styleable name="FButton">
+        <attr name="shadowEnabled" format="boolean" />
+        <attr name="buttonColor" format="color" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowHeight" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+    
+    
+    <!-- JazzyListView openlibrary -->
+    <declare-styleable name="JazzyListView">
+        <attr name="effect" format="enum">
+            <enum name="standard" value="0" />
+            <enum name="grow" value="1" />
+            <enum name="cards" value="2" />
+            <enum name="curl" value="3" />
+            <enum name="wave" value="4" />
+            <enum name="flip" value="5" />
+            <enum name="fly" value="6" />
+            <enum name="reverse_fly" value="7" />
+            <enum name="helix" value="8" />
+            <enum name="fan" value="9" />
+            <enum name="tilt" value="10" />
+            <enum name="zipper" value="11" />
+            <enum name="fade" value="12" />
+            <enum name="twirl" value="13" />
+            <enum name="slide_in" value="14" />
+        </attr>
+        <attr name="only_animate_new_items" format="boolean" />
+        <attr name="only_animate_fling" format="boolean" />
+        <attr name="simulate_grid_with_list" format="boolean" />
+        <attr name="max_velocity" format="integer" />
+        <attr name="is_at_most" format="boolean"></attr>
+    </declare-styleable>
+    <!-- Arc Menu openlibrary -->
+    <declare-styleable name="ArcMenu">
+        <attr name="position" >
+	        <enum name="left_top" value="0" />
+	        <enum name="left_bottom" value="1" />
+	        <enum name="right_top" value="2" />
+	        <enum name="right_bottom" value="3" />
+    	</attr>
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+    
+    <!-- Styles -->
+    <attr name="styleCaldroidViewLayout" format="reference"/>
+    <attr name="styleCaldroidLeftArrow" format="reference"/>
+    <attr name="styleCaldroidRightArrow" format="reference"/>
+    <attr name="styleCaldroidMonthName" format="reference"/>
+    <attr name="styleCaldroidNormalCell" format="reference"/>
+    <attr name="styleCaldroidSquareCell" format="reference"/>
+    <attr name="styleCaldroidGridView" format="reference"/>
+    <attr name="styleCaldroidWeekdayView" format="reference"/>
+
+    <!-- Custom states -->
+    <declare-styleable name="DateState">
+        <attr name="state_date_today" format="boolean"/>
+        <attr name="state_date_selected" format="boolean"/>
+        <attr name="state_date_disabled" format="boolean"/>
+        <attr name="state_date_prev_next_month" format="boolean"/>
+    </declare-styleable>
+
+    <!-- Declare stylable attribute for a cell -->
+    <declare-styleable name="Cell" >
+        <attr name="android:textColor" />
+        <attr name="android:background" />
+    </declare-styleable>
+    
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+</resources>

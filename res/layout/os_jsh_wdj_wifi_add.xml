@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/os_jsh_wdj_wifi_add_input_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/et_ssid"
+                style="@style/app_medium_textStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="text"
+                android:hint="@string/os_jsh_wdj_wifi_add_qsrmc" />
+
+            <Button
+                android:id="@+id/btn_xzwl"
+                style="@style/app_medium_textStyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/os_jsh_wdj_wifi_add_xzwl_selector"
+                android:text="@string/os_jsh_wdj_wifi_add_xzwl" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/os_jsh_wdj_wifi_add_input_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/app_medium_textStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:hint="@string/os_jsh_wdj_wifi_add_qsrmm" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/app_login_btnbg"
+            android:gravity="center"
+            android:text="@string/app_ButtonTextNext"
+            style="@style/app_big_textStyle1"
+            android:minHeight="45dp" />
+    </LinearLayout>
+
+</LinearLayout>

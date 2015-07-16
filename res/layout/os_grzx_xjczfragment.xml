@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titletv"
+        style="@style/app_big_textStyle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="45dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:text="您正在为以下账号充值:" />
+
+    <TextView
+        android:id="@+id/phonetv"
+        style="@style/app_big_textStyle4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="45dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_register_input"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/app_big_textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+        	android:paddingStart="10dp"
+            android:text="金额:" />
+
+        <EditText
+            android:id="@+id/tyket"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入充值金额"
+            android:background="@null"
+            android:inputType="number"
+            android:minHeight="45dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/zffstv"
+        style="@style/app_big_textStyle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:text="选择支付方式:" />
+
+    <RelativeLayout
+        style="@style/app_medium_textStyle2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_register_input"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/os_grzx_zhcz_zfb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@style/app_medium_textStyle2"
+            android:text="支付宝支付" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingRight="10dp"
+            android:src="@drawable/os_grzx_zhcz_zfbcheck" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/app_medium_textStyle2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_register_input"
+        android:gravity="center"
+        android:text="更多的支付方式接入中..."
+        android:minHeight="45dp" />
+
+    <Button
+        android:id="@+id/czbtn"
+        style="@style/app_big_textStyle1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/app_login_btnbg"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:text="@string/app_ButtonTextNext" />
+
+</LinearLayout>

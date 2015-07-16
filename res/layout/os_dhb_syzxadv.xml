@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Transparent"
+    android:id="@+id/mainrl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/translucent_8" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/personiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/os_dhb_syzxadvperson" />
+
+        <Button
+            android:id="@+id/topiv"
+            style="@style/app_medium_textStyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal"
+            android:paddingTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/personiv"
+            android:layout_toEndOf="@id/personiv"
+            android:background="@drawable/os_dhb_syzxadvtopselector"
+            android:text="立即领取    0银元\n观看下一条广告" />
+
+        <Button
+            android:id="@+id/bottomiv"
+            style="@style/app_medium_textStyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/personiv"
+            android:layout_toEndOf="@id/personiv"
+            android:layout_below="@id/topiv"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/os_dhb_syzxadvbottomselector"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:text="赚取更多    0银元" />
+    </RelativeLayout>
+
+</RelativeLayout>

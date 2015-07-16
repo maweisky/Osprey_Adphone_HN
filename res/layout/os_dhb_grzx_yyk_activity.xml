@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/osprey_adphone_hn.cellcom.com.cn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/os_grzx_hfk_kyyy_icon"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/app_textStyle2"
+            android:layout_margin="5dp"
+            android:text="可用银元："/>
+        <TextView 
+            android:id="@+id/tv_kyyy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/app_textStyle4"
+            android:text="0"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/app_textStyle2"
+            android:text="元"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/os_grzx_hfk_yyzs_icon"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/app_textStyle2"
+            android:layout_margin="5dp"
+            android:text="累计获得总数："/>
+        <TextView 
+            android:id="@+id/tv_yyzs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/app_textStyle2"
+            android:text="0元"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/os_grzx_hfk_dhcs_icon"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/app_textStyle2"
+            android:layout_margin="5dp"
+            android:text="兑换次数："/>
+        <TextView 
+            android:id="@+id/tv_dhcs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/app_textStyle2"
+            android:text="0"/>
+    </LinearLayout>
+    
+    <osprey_adphone_hn.cellcom.com.cn.widget.fbutton.FButton 
+        android:id="@+id/btn_dhzx"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        style="@style/app_textStyle1"
+        app:shadowEnabled="false"
+        app:cornerRadius="3dp"
+        android:text="@string/os_dhb_grzx_dhzx"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"/>
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_gray" />
+    
+    <TextView
+        android:id="@+id/tv_empty"
+        style="@style/app_text_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/empty_img"
+        android:gravity="center"
+        android:text="查询不到银元库信息，点击图片重新加载~"
+        android:visibility="gone" />
+    
+    <osprey_adphone_hn.cellcom.com.cn.widget.jazzylistview.JazzyListView
+        android:id="@+id/listview"
+        android:layout_weight="1.0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        app:effect="helix"
+        app:only_animate_new_items="false"
+        app:only_animate_fling="false"
+        app:max_velocity="0">
+        
+    </osprey_adphone_hn.cellcom.com.cn.widget.jazzylistview.JazzyListView>
+
+</LinearLayout>

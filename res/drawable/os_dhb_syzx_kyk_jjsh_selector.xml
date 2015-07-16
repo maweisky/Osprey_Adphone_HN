@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/os_dhb_syzx_kyk_jjsh_selected" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/os_dhb_syzx_kyk_jjsh_selected" android:state_focused="true"></item>
+    <item android:drawable="@drawable/os_dhb_syzx_kyk_jjsh_unselected"></item>
+
+</selector>

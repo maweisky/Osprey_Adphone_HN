@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <osprey_adphone_hn.cellcom.com.cn.widget.RoundImageView
+        android:id="@+id/video_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/os_dhb_itempic"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/videotv"
+        style="@style/app_textStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_white"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:id="@+id/levelrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:orientation="horizontal" >
+
+        <ExpandableListView 
+            android:id="@+id/arealv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            />
+    </RelativeLayout>
+</LinearLayout>

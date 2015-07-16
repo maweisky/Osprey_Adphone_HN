@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="45dp"
+    android:background="@color/orange"
+    >
+
+    <LinearLayout
+        android:id="@+id/llAppBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:padding="10dp"
+        android:background="@drawable/os_topbar_set_selector"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/ivAppback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/os_topbar_back_icon" >
+        </ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTopTitle"
+        style="@style/app_titleStyle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:padding="10dp"
+        android:background="@drawable/os_topbar_set_selector"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/ivedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/os_topbar_edit_icon"
+            android:visibility="gone" >
+        </ImageView>
+        <TextView
+            android:id="@+id/tvsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/app_textStyle1"
+            android:text="@string/os_jsh_wdj_ewm_bz"
+            android:contentDescription="@null"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

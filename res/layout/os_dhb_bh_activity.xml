@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainrl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/callingll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/app_textStyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/os_dhb_bhzzhj" />
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.WaitingBar
+            android:id="@+id/wb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <osprey_adphone_hn.cellcom.com.cn.widget.jazzyviewpager.JazzyViewPager
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/jazzy_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/botll"
+        android:layout_below="@id/callingll"/>
+
+    <LinearLayout
+        android:id="@+id/botll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#4A4A4A"
+        android:gravity="center"
+        android:minHeight="200dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/phonetv"
+            style="@style/app_titleStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+             />
+        <TextView
+            android:id="@+id/nametv"
+            style="@style/app_big_textStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+             />
+        <ImageView 
+            android:id="@+id/returniv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/os_dhb_callreturnselector"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_white"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:minHeight="45dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/jinbtn"
+                style="@style/app_textStyle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:minHeight="45dp"
+                android:text="@string/os_csh_jin" />
+
+            <EditText
+                android:id="@+id/zhet"
+                style="@style/app_textStyle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_login_input"
+                android:focusable="false"
+                android:gravity="center"
+                android:inputType="number"
+                android:minHeight="45dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_white"
+            android:contentDescription="@null" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:minHeight="45dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/pptv"
+                style="@style/app_textStyle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:minHeight="45dp"
+                android:text="@string/os_csh_pinpai" />
+
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@null"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_white"
+            android:contentDescription="@null" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:minHeight="45dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/vintv"
+                style="@style/app_textStyle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:minHeight="45dp"
+                android:text="@string/os_csh_vin" />
+
+            <EditText
+                android:id="@+id/shret"
+                style="@style/app_textStyle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:focusable="false"
+                android:minHeight="45dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_white"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:minHeight="45dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lxdhtv"
+                style="@style/app_textStyle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="end|center_vertical"
+                android:minHeight="45dp"
+                android:text="@string/os_dhb_grzx_lxdh" />
+
+            <EditText
+                android:id="@+id/lxdhet"
+                style="@style/app_textStyle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:focusable="false"
+                android:inputType="number"
+                android:minHeight="45dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_white"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:minHeight="45dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sfdqtv"
+                style="@style/app_textStyle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="end|center_vertical"
+                android:minHeight="45dp"
+                android:text="@string/os_dhb_grzx_sfdq" />
+
+            <TextView
+                android:id="@+id/sfdqet"
+                style="@style/app_textStyle2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center"
+                android:focusable="false"
+                android:minHeight="45dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_white"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:minHeight="45dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/xxdztv"
+                style="@style/app_textStyle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="end|center_vertical"
+                android:minHeight="45dp"
+                android:text="@string/os_dhb_grzx_xxdz" />
+
+            <EditText
+                android:id="@+id/xxdzet"
+                style="@style/app_textStyle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:focusable="false"
+                android:minHeight="45dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_white"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:minHeight="45dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yzbmtv"
+                style="@style/app_textStyle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="end|center_vertical"
+                android:minHeight="45dp"
+                android:text="@string/os_dhb_grzx_yzbm" />
+
+            <EditText
+                android:id="@+id/yzbmet"
+                style="@style/app_textStyle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:focusable="false"
+                android:inputType="number"
+                android:minHeight="45dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView>

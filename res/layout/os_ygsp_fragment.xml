@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/osprey_adphone_hn.cellcom.com.cn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_empty"
+        style="@style/app_text_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:drawablePadding="15dp"
+        android:drawableTop="@drawable/os_mobile_empty_icon"
+        android:gravity="center"
+        android:text="抱歉，没有找到相关订单~"
+        android:visibility="gone" />
+
+    <osprey_adphone_hn.cellcom.com.cn.widget.jazzylistview.JazzyListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.0"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="5dp"
+        android:listSelector="@android:color/transparent"
+        app:effect="helix"
+        app:max_velocity="0"
+        app:only_animate_fling="false"
+        app:only_animate_new_items="false" >
+    </osprey_adphone_hn.cellcom.com.cn.widget.jazzylistview.JazzyListView>
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/loadingImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@anim/progress_round"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/id_tv_loadingmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/app_loading"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

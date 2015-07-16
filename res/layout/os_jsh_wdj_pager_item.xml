@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainrl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/os_jsh_wdj_pager_item_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/iv_push"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent_8"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@color/Translucent_black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/app_small_textStyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxxxxxxxxxxx" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/app_small_textStyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/os_jsh_wdj_offline" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            style="@style/app_small_textStyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:drawableLeft="@drawable/os_jsh_wdj_item_error"
+            android:drawablePadding="3dp"
+            android:drawableStart="@drawable/os_jsh_wdj_item_error"
+            android:text="@string/os_jsh_wdj_mmcw"
+            android:textColor="@color/deep_red1" />
+
+        <LinearLayout
+            android:id="@+id/ll_bf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_bf"
+                android:layout_width="25dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+            	android:layout_marginStart="10dp"
+            	android:layout_gravity="center_vertical"
+                android:background="@drawable/os_jsh_wdj_item_bf_off"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/pb_loading"
+                style="@android:style/Widget.ProgressBar.Small.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_bf"
+                style="@style/app_small_textStyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/os_jsh_wdj_sf" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/os_jsh_wdj_pager_item_play_selector"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/os_jsh_wdj_pager_item_back_selector"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/iv_play"
+            android:layout_toRightOf="@id/iv_play"
+            android:background="@drawable/os_jsh_wdj_pager_item_set_selector"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_play"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/iv_play"
+            android:layout_toRightOf="@id/iv_play"
+            android:background="@drawable/os_jsh_wdj_pager_item_edit_selector"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

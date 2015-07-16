@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_ad"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.jazzyviewpager.JazzyViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </osprey_adphone_hn.cellcom.com.cn.widget.jazzyviewpager.JazzyViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_dot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_below="@id/fl_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/loadingImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@anim/progress_round"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/id_tv_loadingmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/app_loading"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <osprey_adphone_hn.cellcom.com.cn.widget.jazzyviewpager.JazzyViewPager
+        android:id="@+id/jvp_device"
+        android:layout_below="@id/fl_ad"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </osprey_adphone_hn.cellcom.com.cn.widget.jazzyviewpager.JazzyViewPager>
+
+    <ImageButton
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/fl_ad"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/os_jsh_wdj_add_selector"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:id="@+id/ll_dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

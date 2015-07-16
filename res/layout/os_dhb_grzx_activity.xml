@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="15dp" >
+    
+    <TextView
+        android:id="@+id/tv_hfk"
+        style="@style/app_medium_textStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1.0"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/os_dhb_grzx_hfk_selector"
+        android:gravity="center"
+        android:text="@string/os_dhb_grzx_hfk"
+        android:textSize="13dp" />
+
+   <TextView
+        android:id="@+id/tv_yyk"
+        style="@style/app_medium_textStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@id/tv_hfk"
+        android:layout_weight="1.0"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/os_dhb_grzx_yyk_selector"
+        android:gravity="center"
+        android:text="@string/os_dhb_grzx_yyk"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv_jfk"
+        style="@style/app_medium_textStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@id/tv_yyk"
+        android:layout_weight="1.0"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/os_dhb_grzx_jfk_selector"
+        android:gravity="center"
+        android:text="@string/os_dhb_grzx_jfk"
+        android:textSize="13dp" />
+    
+    <TextView
+        android:id="@+id/tv_fgg"
+        android:layout_toRightOf="@id/tv_jfk"
+        style="@style/app_medium_textStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/os_dhb_grzx_fgg_selector"
+        android:gravity="center"
+        android:text="@string/os_dhb_grzx_jfsc"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv_cxzs"
+        style="@style/app_medium_textStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hfk"
+        android:layout_margin="8dp"
+        android:layout_weight="1.0"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/os_dhb_grzx_cxzs_selector"
+        android:gravity="center"
+        android:text="@string/os_dhb_grzx_cxzs"
+        android:textSize="13dp" />
+
+    <TextView
+        android:layout_toRightOf="@id/tv_cxzs"
+        android:layout_below="@id/tv_hfk"
+        android:id="@+id/tv_zbsh"
+        style="@style/app_medium_textStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1.0"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/os_dhb_grzx_zbsh_selector"
+        android:gravity="center"
+        android:text="@string/os_dhb_grzx_zbsh"
+        android:textSize="13dp" />
+
+    <TextView
+        android:layout_toRightOf="@id/tv_zbsh"
+        android:layout_below="@id/tv_hfk"
+        android:id="@+id/tv_shjf"
+        style="@style/app_medium_textStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1.0"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/os_dhb_grzx_shjf_selector"
+        android:gravity="center"
+        android:text="@string/os_dhb_grzx_shjf"
+        android:textSize="13dp" />
+
+    <TextView
+        android:layout_toRightOf="@id/tv_shjf"
+        android:layout_below="@id/tv_hfk"
+        android:id="@+id/tv_zxgw"
+        style="@style/app_medium_textStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1.0"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/os_dhb_grzx_zxgw_selector"
+        android:gravity="center"
+        android:text="@string/os_dhb_grzx_zxgw"
+        android:textSize="13dp" />
+
+</RelativeLayout>

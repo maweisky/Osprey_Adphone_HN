@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="50dp" >
+
+    <!-- 首字母 -->
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        android:paddingLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+
+    <!-- 联系人信息 -->
+
+    <QuickContactBadge
+        android:id="@+id/qcb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:contentDescription="@null"
+        android:src="@drawable/os_dhb_itempic" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/qcb"
+        android:layout_toRightOf="@+id/qcb" >
+
+        <TextView
+            android:id="@+id/prename"
+            style="@style/app_textStyle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/app_textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/prename"
+            android:layout_toRightOf="@+id/prename"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/prenumber"
+            style="@style/app_medium_textStyle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prename"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/number"
+            style="@style/app_medium_textStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prename"
+            android:layout_toEndOf="@+id/prenumber"
+            android:layout_toRightOf="@+id/prenumber"
+            android:singleLine="true" />
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/editiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/os_dhb_editcontactselector"
+        />
+
+</RelativeLayout>

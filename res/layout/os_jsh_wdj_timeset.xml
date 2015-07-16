@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray1"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <osprey_adphone_hn.cellcom.com.cn.widget.RoundImageView
+                android:id="@+id/video_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/os_dhb_itempic" />
+
+            <TextView
+                android:id="@+id/videotv"
+                style="@style/app_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_time_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/app_textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/os_device_time" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_urban_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_setting_urban"
+                style="@style/app_textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/os_urban_settings"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_setting_urban"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_utc"
+                        style="@style/app_textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/os_UTC" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <osprey_adphone_hn.cellcom.com.cn.widget.wheel.WheelView
+                        android:id="@+id/w_urban"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/bt_set_timezone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/os_confirm" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    android:id="@+id/text"
+                    style="@style/app_textStyle"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/os_jsh_wdj_hf_year" />
+
+                <TextView
+                    style="@style/app_textStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/os_jsh_wdj_hfmonth" />
+
+                <TextView
+                    style="@style/app_textStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/os_jsh_wdj_day" />
+
+                <TextView
+                    style="@style/app_textStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/os_jsh_wdj_hour" />
+
+                <TextView
+                    style="@style/app_textStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/os_jsh_wdj_minutes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <osprey_adphone_hn.cellcom.com.cn.widget.wheel.WheelView
+                    android:id="@+id/date_year"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content" />
+
+                <osprey_adphone_hn.cellcom.com.cn.widget.wheel.WheelView
+                    android:id="@+id/date_month"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <osprey_adphone_hn.cellcom.com.cn.widget.wheel.WheelView
+                    android:id="@+id/date_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <osprey_adphone_hn.cellcom.com.cn.widget.wheel.WheelView
+                    android:id="@+id/date_hour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <osprey_adphone_hn.cellcom.com.cn.widget.wheel.WheelView
+                    android:id="@+id/date_minute"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setbtn"
+            style="@style/app_big_textStyle1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/app_login_btnbg"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:text="@string/app_ButtonTextYes" />
+    </LinearLayout>
+
+</osprey_adphone_hn.cellcom.com.cn.widget.BounceScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/osprey_adphone_hn.cellcom.com.cn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titletv"
+        style="@style/app_big_textStyle2"
+        android:text="体验卡串码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+         />
+
+    <EditText
+        android:id="@+id/tyket"
+        style="@style/app_medium_textStyle2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titletv"
+        android:background="@drawable/app_register_input"
+        android:hint="请输入串码"
+        android:inputType="number"
+        android:minHeight="45dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp" />
+
+    <Button
+        android:id="@+id/czbtn"
+        style="@style/app_big_textStyle1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tyket"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/app_login_btnbg"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:text="@string/app_ButtonTextYes" />
+
+</RelativeLayout>

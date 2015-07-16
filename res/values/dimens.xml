@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- FButton openlibrary. -->
+    <dimen name="fbutton_default_conner_radius">8dp</dimen>
+    <dimen name="fbutton_default_padding_left">10dp</dimen>
+    <dimen name="fbutton_default_padding_right">10dp</dimen>
+    <dimen name="fbutton_default_padding_top">5dp</dimen>
+    <dimen name="fbutton_default_padding_bottom">5dp</dimen>
+    <dimen name="fbutton_default_shadow_height">4dp</dimen>
+    <dimen name="fbutton_min_width">130dp</dimen>
+    <dimen name="fbutton_min_height">45dp</dimen>
+    <dimen name="dimen_margin_circle">4dp</dimen>
+    <dimen name="dimen_margin_circle.negative">-4dp</dimen>
+    <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
+    <dimen name="calendar_month_topmargin">16dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">4dp</dimen>
+    <dimen name="calendar_text_medium">18sp</dimen>
+    <dimen name="calendar_text_small">14sp</dimen>
+    
+    <dimen name="shape_corner_radius">0dp</dimen>
+    <dimen name="shape_stroke_width">1dp</dimen>
+    <dimen name="view_margin">2dp</dimen>
+    <dimen name="sliding_drawer_outter_height">768dp</dimen>
+    <dimen name="sliding_drawer_outter_width">512dp</dimen>
+    <dimen name="horizontal_handle_width">128dp</dimen>
+    <dimen name="horizontal_handle_height">64dp</dimen>
+    <dimen name="vertical_handle_width">@dimen/horizontal_handle_height</dimen>
+    <dimen name="vertical_handle_height">@dimen/horizontal_handle_width</dimen>
+    <dimen name="expanded_offset">64dp</dimen>
+    <dimen name="collapsed_offset">32dp</dimen>
+
+	<dimen name="avatar_round_border_size">2dp</dimen>
+    <dimen name="avatar_square_border_size">2dp</dimen>
+    
+    <dimen name="Loading_dialog_width">200dp</dimen>
+    <dimen name="about_dialog_width">300dp</dimen>
+    <dimen name="normal_dialog_width">280dp</dimen>
+</resources>

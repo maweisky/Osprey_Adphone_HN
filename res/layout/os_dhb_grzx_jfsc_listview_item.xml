@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/os_view_selector1"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="105dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"
+            android:background="@drawable/os_img_default_icon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/app_medium_textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:text="iphone6金属外壳" />
+
+            <osprey_adphone_hn.cellcom.com.cn.widget.MarqueeText
+                android:id="@+id/tv_describe"
+                style="@style/app_small_textStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="铝合金属外壳，防摔，防变形。" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_sp_num"
+                    style="@style/app_small_textStyle2"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="12件" />
+                <TextView
+                    android:id="@+id/tv_jf_num"
+                    style="@style/app_small_textStyle2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:text="需要积分：7800" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/light_gray" />
+
+</LinearLayout>

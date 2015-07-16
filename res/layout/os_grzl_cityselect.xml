@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_pick"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#e0e0e0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.wheel.WheelView
+            android:id="@+id/province_wv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.wheel.WheelView
+            android:id="@+id/city_wv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <osprey_adphone_hn.cellcom.com.cn.widget.wheel.WheelView
+            android:id="@+id/area_wv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/subbtn"
+        style="@style/app_big_textStyle1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/app_login_btnbg"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:text="@string/app_ButtonTextYes" />
+
+</LinearLayout>

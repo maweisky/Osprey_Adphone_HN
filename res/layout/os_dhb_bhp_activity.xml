@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <ListView
+        android:id="@+id/call_log_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/os_dhb_itembottompic"
+        android:scrollbars="@null"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:visibility="visible" 
+        />
+	<LinearLayout
+        android:id="@+id/mKeyboardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/os_dhb_keyboardbg"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="45dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/keyboariv"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                style="@style/app_titleStyle"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@null"
+                android:background="@drawable/os_dhb_keyboardhidebtnselect"
+                android:src="@drawable/os_dhb_bottom_bhp_keyborad_down"
+                android:focusable="false"
+                android:scaleType="center" />
+
+            <EditText
+                android:id="@+id/keyboard_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/app_textStyle"
+                android:hint="@string/os_dhb_php"
+                android:focusable="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_no1" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_no2" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_no3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_no4" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_no5" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_no6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_no7" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_no8" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_no9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/xbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_nox" />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_no0" />
+
+            <Button
+                android:id="@+id/jbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_titleStyle"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:scaleType="centerCrop"
+                android:text="@string/keyboard_noj" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/addiv"
+                android:contentDescription="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:src="@drawable/os_dhb_keyboradaddlxr"
+                android:focusable="false"
+                android:scaleType="center" />
+
+            <ImageView
+                android:id="@+id/phoneiv"
+                android:contentDescription="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditemphonebgselect"
+                android:src="@drawable/os_dhb_keyboradphoneicon"
+                android:focusable="false"
+                android:scaleType="center" />
+
+            <ImageView
+                android:id="@+id/deleteiv"
+                android:contentDescription="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/os_dhb_keyboarditembgselect"
+                android:src="@drawable/os_dhb_keyboraddelete"
+                android:focusable="false"
+                android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
