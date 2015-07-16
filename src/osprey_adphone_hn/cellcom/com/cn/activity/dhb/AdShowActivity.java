@@ -30,7 +30,6 @@ import android.os.Handler;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
@@ -45,7 +44,6 @@ import cellcom.com.cn.net.base.CellComHttpInterface;
 public class AdShowActivity extends ActivityFrame implements OnActionSheetSelected {
 	private LinearLayout llAppBack;
 	private MarqueeText tvTopTitle;
-
 	private RelativeLayout rl_money_anim;
 	private LinearLayout ll_money_anim;
 	private TextView tv_add_money_num;
@@ -64,7 +62,6 @@ public class AdShowActivity extends ActivityFrame implements OnActionSheetSelect
 	private List<View> view_img;// 装载广告图片的集合
 	private int currentItem = 0;// 当前索引
 
-	// private ImageView iv_left_arrow, iv_right_arrow;
 
 	KykAdResult kykadresult;
 
